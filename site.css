@@ -84,3 +84,17 @@ nav > ul > li {
 .columns-deskop {
   margin-top: 800px;
 }
+
+.restauration {
+  margin-top: 1360px;
+  margin-left: 600px;
+}
+.restauration-text {
+  margin-left: 2000px;
+  margin-bottom: 100px;
+  margin-top: -700px;
+}
+
+.nawigacja {
+  font-size: 20pt;
+}
