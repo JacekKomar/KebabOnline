@@ -29,14 +29,14 @@ nav > ul > li {
   display: flex;
   height: 300px;
   align-items: center;
-  justify-content: center;
+
   background-color: red;
 }
 .container {
   font-family: arial;
   font-size: 24px;
   margin: 25px;
-  width: 350px;
+
   height: 200px;
   outline: dashed 1px black;
   text-align: center;
@@ -60,9 +60,10 @@ nav > ul > li {
   padding: 0 auto;
   margin-top: 800px;
   text-decoration: none;
-  margin-left: 3300px;
+
   margin-right: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Kebab-pizza {
@@ -86,15 +87,52 @@ nav > ul > li {
 }
 
 .restauration {
-  margin-top: 1360px;
-  margin-left: 600px;
+  margin-top: 1100px;
+  margin-left: 1200px;
 }
 .restauration-text {
-  margin-left: 2000px;
-  margin-bottom: 100px;
-  margin-top: -700px;
+  margin-top: 400px;
+  margin-left: 70px;
+
+  width: 350px;
 }
 
 .nawigacja {
   font-size: 20pt;
+}
+
+.XD {
+  text-decoration: none;
+}
+
+.XD:hover {
+  text-decoration: underline;
+  color: rgb(93, 211, 142);
+}
+.job {
+}
+
+.job-text {
+  text-decoration: none;
+  display: flex;
+
+  width: 500px;
+  text-align: left;
+}
+
+.job-texttwo {
+  text-decoration: none;
+  display: flex;
+
+  margin-top: -1px;
+  width: 600px;
+}
+
+main {
+  margin-top: 400px;
+}
+
+.job-container {
+  display: flex;
+  margin-top: 500px;
 }
