@@ -43,13 +43,14 @@ nav > ul > li {
 }
 
 .Contact {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 0 auto;
   margin-top: 800px;
   text-decoration: none;
   margin-left: 200px;
   margin-right: 20px;
   display: flex;
+  text-align: left;
 }
 
 .headers {
@@ -88,11 +89,11 @@ nav > ul > li {
 
 .restauration {
   margin-top: 1100px;
-  margin-left: 1200px;
+
+  margin-left: 200px;
 }
 .restauration-text {
   margin-top: 400px;
-  margin-left: 70px;
 
   width: 350px;
 }
@@ -135,4 +136,24 @@ main {
 .job-container {
   display: flex;
   margin-top: 500px;
+}
+
+.index {
+  margin-top: 1500px;
+  margin-left: 280px;
+  text-align: left;
+  display: flex;
+}
+
+.Maklowicz {
+  margin-top: 100px;
+  margin-left: 280px;
+  display: flex;
+  width: 900px;
+  margin-bottom: 100px;
+}
+
+.Kebab-biggest {
+  flex-direction: row;
+  margin-top: 110px;
 }
