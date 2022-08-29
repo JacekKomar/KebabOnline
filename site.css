@@ -193,3 +193,42 @@ main {
   color: #ffff;
   font-size: large;
 }
+
+.Kebab-drinks {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+
+  flex-direction: column;
+
+  background-color: bisque;
+}
+.Center-drinks {
+  color: white;
+  padding: 0 auto;
+  margin-top: 1400px;
+  text-decoration: none;
+
+  margin-right: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+}
+
+.button-drinks {
+  width: 310px;
+  height: 50px;
+  background-color: rgb(71, 52, 0);
+  color: #ffff;
+  font-size: large;
+}
+
+.columns-deskop-drinks {
+  margin-top: 800px;
+}
