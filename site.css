@@ -154,8 +154,12 @@ main {
 
 .Maklowicz {
   margin-top: 1800px;
-  margin-left: -720px;
+  margin-left: -800px;
   display: flex;
+}
+
+.Maklowicz-text {
+  width: 500px;
 }
 
 .Kebab-biggest {
