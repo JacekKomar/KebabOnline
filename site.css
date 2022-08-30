@@ -45,7 +45,7 @@ nav > ul > li {
 .Contact {
   color: rgb(0, 0, 0);
   padding: 0 auto;
-  margin-top: 800px;
+  margin-top: 300px;
   text-decoration: none;
   margin-left: 200px;
   margin-right: 20px;
@@ -89,18 +89,16 @@ nav > ul > li {
 }
 
 .columns-deskop {
-  margin-top: 800px;
+  margin-top: 1500px;
 }
 
 .restauration {
-  margin-top: 1100px;
+  margin-top: 1200px;
 
   margin-left: 200px;
-}
-.restauration-text {
-  margin-top: 400px;
-
-  width: 350px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .nawigacja {
@@ -116,6 +114,8 @@ nav > ul > li {
   color: rgb(93, 211, 142);
 }
 .job {
+  margin-top: 200px;
+  margin-left: 300px;
 }
 
 .job-text {
@@ -124,14 +124,16 @@ nav > ul > li {
 
   width: 500px;
   text-align: left;
+  margin-top: 140px;
 }
 
 .job-texttwo {
   text-decoration: none;
   display: flex;
 
-  margin-top: -1px;
+  margin-top: 600px;
   width: 600px;
+  margin-left: -500px;
 }
 
 main {
@@ -144,18 +146,16 @@ main {
 }
 
 .index {
-  margin-top: 1500px;
+  margin-top: 900px;
   margin-left: 280px;
   text-align: left;
   display: flex;
 }
 
 .Maklowicz {
-  margin-top: 100px;
-  margin-left: 280px;
+  margin-top: 1800px;
+  margin-left: -720px;
   display: flex;
-  width: 900px;
-  margin-bottom: 100px;
 }
 
 .Kebab-biggest {
@@ -230,5 +230,5 @@ main {
 }
 
 .columns-deskop-drinks {
-  margin-top: 800px;
+  margin-top: 1600px;
 }
