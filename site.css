@@ -236,3 +236,21 @@ main {
 .columns-deskop-drinks {
   margin-top: 1600px;
 }
+
+.shopping {
+  color: aliceblue;
+}
+
+.plus-minus-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bi-dash-square {
+  color: red;
+}
+
+.bi-plus-square {
+  color: rgb(56, 87, 9);
+}
