@@ -254,3 +254,24 @@ main {
 .bi-plus-square {
   color: rgb(56, 87, 9);
 }
+
+.cart {
+  display: flex;
+}
+
+.shopping-article {
+  margin-top: 500px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.HomeBtn {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
