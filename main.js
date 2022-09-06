@@ -1,11 +1,13 @@
 const shop = document.getElementById("KebabListFromJavaScript");
 
+let card = [];
+
 console.log(kebabList);
 
 // kebabPreviev
 // kebabPreviev.kebabTitke
 const generateKebabOne = (kebabOne) => {
-  return `   <div class= "Kebab-pizza" id="kebab-pizza">
+  return `<div  class= "Kebab-pizza" id="${kebabOne.id}"> 
 <img src="${kebabOne.img}" alt="Kebabbig" width="310px" height="210px" />
 <div class="titke">${kebabOne.titke}</div>
 <div class="price">${kebabOne.price}</div>
@@ -13,9 +15,9 @@ const generateKebabOne = (kebabOne) => {
   ${kebabOne.desc}
   </p>
   <div class="plus-minus-buttons">
-  <i onclick="decrement" class="bi bi-dash-square"></i>
-  <div  class="quantity">0</div>
-  <i onclick="increment" class="bi bi-plus-square"></i>
+  <i  class="bi bi-dash-square" onclick="decrement('${kebabOne.id}')" ></i>
+  <div class="quantity" id="${kebabOne.id}">0</div>
+  <i  class="bi bi-plus-square" onclick="increment('${kebabOne.id}')" ></i>
 </div>
 <button class="button-kebab" data-order="kebabbig">Zamów</button>
 </div>`;
@@ -24,6 +26,31 @@ const generateKebabOne = (kebabOne) => {
 //shop.innerHTML = generateKebabOne(kebabList[1]);
 shop.innerHTML += kebabList.map(generateKebabOne).join("");
 
-// nie da się dodac id do powyzej
+let increment = (clickedId) => {
+  const findElement = (kebabOne) => kebabOne.id === clickedId;
 
-let increment = () => {};
+  let search = card.find(findElement);
+
+  if (search === undefined) {
+    const newElement = {
+      id: clickedId,
+      item: 1,
+    };
+    card.push(newElement);
+  } else {
+    search.item += 1;
+  }
+
+  console.log(card);
+};
+let decrement = (clickedId) => {
+  let search = card.find((kebabOne) => kebabOne.id === clickedId);
+
+  if (search.item === 0) return;
+  else {
+    search.item -= 1;
+  }
+
+  console.log(card);
+};
+let update = () => {};

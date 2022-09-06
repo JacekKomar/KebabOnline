@@ -1,6 +1,6 @@
 const kebabList = [
   {
-    id: "Kebab pizza",
+    id: "KebabPizza",
     img: "imagies/foods/kebab_pizza.jpg",
     titke: "Kebab pizza",
     price: "39.99 pln",
