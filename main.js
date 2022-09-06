@@ -2,15 +2,6 @@ const shop = document.getElementById("KebabListFromJavaScript");
 
 console.log(kebabList);
 
-const showJackoJeden = (imie, nazwisko, adres) => {
-  console.log(imie);
-  console.log(nazwisko);
-  console.log(adres);
-};
-
-showJackoJeden("Krzychu", "Komar", "Wyścigi");
-showJackoJeden("Jacek", "Komar", "Jasionka");
-
 // kebabPreviev
 // kebabPreviev.kebabTitke
 const generateKebabOne = (kebabOne) => {
@@ -26,13 +17,8 @@ const generateKebabOne = (kebabOne) => {
 </div>`;
 };
 
-const dodajPlusika = (tekst) => {
-  return "+" + tekst + "+";
-};
-const tablica = ["Jacek", "Konon", "J00r"].map(dodajPlusika).join(" i ");
-
-console.log(tablica);
-
 //shop.innerHTML = generateKebabOne(kebabList[1]);
 shop.innerHTML += kebabList.map(generateKebabOne).join("");
-const showKebab = () => {};
+
+//czystki niepotrzebnych rzeczy np jacko show 1 , showJackoJeden, consol log wszystkie wywaic,
+// sprawdzic database - tam jest komentarz co zrobic
