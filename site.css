@@ -28,8 +28,6 @@ nav > ul > li {
 .container {
   display: flex;
   height: 300px;
-  align-items: center;
-
   background-color: red;
 }
 .container {
@@ -154,8 +152,6 @@ main {
 
 .Maklowicz {
   margin-top: 1800px;
-  margin-left: -800px;
-  display: flex;
 }
 
 .Maklowicz-text {

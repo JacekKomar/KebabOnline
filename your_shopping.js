@@ -11,19 +11,23 @@ let calculation = () => {
     .reduce((x, y) => x + y, 0);
 };
 calculation();
+
 let generateCartItems = () => {
   if (card.length !== 0) {
-    return (ShoppingCart.innerHTML = card.map((kebabOne) => {
-      console.log(kebabOne);
-      let { id, item } = kebabOne.find((y) => y.id === id) || [];
-      let search = kebabList;
-      return `
-<div class="cart-item">
-<img scr=${search.img} alt=""/>
-
-</div>
+    shoppingCart.innerHTML = card
+      .map((kebabOne) => {
+        let { id, item } = kebabOne;
+        let search = kebabList.find((y) => y.id === id) || [];
+        return `
+      <div class="cart-item">
+        <img width="100" src=${search.img} alt=""/>
+        <div class="details">
+          ${search.titke}
+        </div>
+      </div>
 `;
-    }));
+      })
+      .join("");
   } else {
     ShoppingCart.innerHTML = ``;
     label.innerHTML = `
