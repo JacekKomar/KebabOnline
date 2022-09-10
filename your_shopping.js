@@ -22,7 +22,20 @@ let generateCartItems = () => {
       <div class="cart-item">
         <img width="100" src=${search.img} alt=""/>
         <div class="details">
-          ${search.titke}
+    
+<div class= "titke-price-x">
+<h4> 
+<p>${search.titke}</p> 
+<p class="cart-item-price">$ ${search.price}</p>
+</h4 class="titke-price">
+<i class="bi bi-x-lg"></i>
+</div>
+
+<div class= "cart-buttons"> </div>
+<h3></h3>
+
+
+
         </div>
       </div>
 `;

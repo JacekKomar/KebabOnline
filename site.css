@@ -271,3 +271,37 @@ main {
   border-radius: 3px;
   cursor: pointer;
 }
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.titke-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titke-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 3px 6px;
+}
