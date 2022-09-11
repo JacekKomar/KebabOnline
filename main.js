@@ -63,8 +63,8 @@ let decrement = (clickedId) => {
 
   // console.log(card);
   update(clickedId.id);
-
-  localStorage.setItem("data", JSON.stringify(basket));
+  card = card.filter((x) => x.item !== 0);
+  localStorage.setItem("data", JSON.stringify(card));
 };
 let update = (id) => {
   let search = card.find((kebabOne) => kebabOne.id === id);
