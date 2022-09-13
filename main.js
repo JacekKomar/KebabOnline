@@ -61,7 +61,7 @@ let decrement = (clickedId) => {
   }
   localStorage.setItem("data", JSON.stringify(card));
 
-  // console.log(card);
+  console.log(card);
   update(clickedId.id);
   card = card.filter((x) => x.item !== 0);
   localStorage.setItem("data", JSON.stringify(card));

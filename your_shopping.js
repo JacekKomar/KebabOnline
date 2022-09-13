@@ -14,10 +14,12 @@ calculation();
 
 let generateCartItems = () => {
   if (card.length !== 0) {
+    //return ?
     shoppingCart.innerHTML = card
       .map((kebabOne) => {
         let { id, item } = kebabOne;
         let search = kebabList.find((y) => y.id === id) || [];
+
         return `
       <div class="cart-item">
         <img width="100" src=${search.img} alt=""/>
@@ -75,6 +77,8 @@ let increment = (clickedId) => {
   } else {
     search.item += 1;
   }
+  generateCartItems();
+
   localStorage.setItem("data", JSON.stringify(card));
 
   console.log(card);
@@ -87,14 +91,12 @@ let decrement = (clickedId) => {
   else {
     search.item -= 1;
   }
+  generateCartItems();
   localStorage.setItem("data", JSON.stringify(card));
 
   update(clickedId.id);
   // linijka na próbę  poniżej
   card = card.filter((x) => x.item !== 0);
-
-  generateCartItems();
-  localStorage.setItem("data", JSON.stringify(basket));
 };
 
 let update = (id) => {
@@ -102,13 +104,23 @@ let update = (id) => {
   console.log(search.item);
   document.getElementById(id).innerHTML = search.item;
   calculation();
+  TotalAmount();
 };
 
 let removeItem = (id) => {
   let selectedItem = id;
-  // console.log(selectedItem.id);
+  //console.log(selectedItem.id);
   card = card.filter((x) => x.id !== selectedItem.id);
   generateCartItems();
+  TotalAmount();
+  calculation();
+  localStorage.setItem("data", JSON.stringify(card));
+};
+
+let clearCart = () => {
+  card = [];
+  generateCartItems();
+  calculation();
   localStorage.setItem("data", JSON.stringify(card));
 };
 
@@ -117,14 +129,15 @@ let TotalAmount = () => {
     let amount = card
       .map((x) => {
         let { item, id } = x;
-        //jak to dodaje to wywala let search = kebabList.find((y) => y.id === id) || [];
+        let search = kebabList.find((y) => y.id === id) || []; //jak to dodaje to wywala
         return item * search.price;
       })
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
     <h2>Total Bill : $ ${amount} </h2>
-   
+   <button class="checkout">Checkout</button>
+   <button onclick ="clearCart()" class="RemoveAll">Clear Cart</button>
    `;
   } else return;
 };

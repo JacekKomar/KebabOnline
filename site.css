@@ -264,12 +264,21 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
-.HomeBtn {
+.HomeBtn,
+.checkout,
+.RemoveAll {
   background-color: black;
   color: white;
   padding: 6px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.checkout {
+  background-color: green;
+}
+.RemoveAll {
+  background-color: red;
 }
 
 .bi-x-lg {
