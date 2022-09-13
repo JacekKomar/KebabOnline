@@ -63,5 +63,5 @@ const kebabList = [
     desc: `własnej roboty <br> podane z cebulką <br> sos: keczup/majonez`,
   },
 ];
-
+let card = JSON.parse(localStorage.getItem("data")) || [];
 // dokonczyc kebaby powyższe,
