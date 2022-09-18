@@ -14,13 +14,11 @@ const generateKebabOne = (kebabOne) => {
 <p class="desc">
   ${kebabOne.desc}
   </p>
+
   <div class="plus-minus-buttons">
   <i  class="bi bi-dash-square" onclick="decrement('${kebabOne.id}')" ></i>
   <div class="quantity" id="${kebabOne.id}">
     ${search.item === undefined ? 0 : search.item} 
-
-  
-  
   </div>
   <i  class="bi bi-plus-square" onclick="increment('${kebabOne.id}')" ></i>
 </div>

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="site.css" type="text/css">
   <title>Foods</title>
   <link rel="icon" href="icon.jpg">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
 
@@ -64,7 +64,7 @@
       <article>
         <section class="columns-deskop-drinks">
 
-          <div class="Center-drinks">
+          <div class="Center-drinks" id="BeerListFromJavaScript">
             <div class="Kebab-drinks">
               <img src="imagies/drinks/beer_1.jpg" alt="beer1" width="310px" height="260px" />
 
@@ -73,6 +73,14 @@
               <p class="desc"> Pojemność - 500 ml <br>
                 Zawartość alkoholu - 6,5% <br>
                 BLG - 15</p>
+              <div class="plus-minus-buttons">
+                <i onclick="decrement" class="bi bi-dash-square"></i>
+                <div class="quantity">0</div>
+
+                <i onclick="increment" class="bi bi-plus-square"></i>
+              </div>
+
+
               <button class="button-drinks" data-order="kebab na talerzu">Zamów</button>
             </div>
 
@@ -194,7 +202,10 @@
     </main>
   </div>
 
-
+  <script src="databaseBeer.js"></script>
+  <script src="common.js"></script>
+  <script src="main2.js"></script>
+  <script src="your_shopping.js"></script>
 </body>
 
 

@@ -89,3 +89,4 @@ const beerList = [
     Zdrowotna`,
   },
 ];
+let card = JSON.parse(localStorage.getItem("data")) || [];
