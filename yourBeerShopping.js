@@ -17,9 +17,9 @@ let generateCartItems = () => {
   if (card.length !== 0) {
     //return ?
     shoppingCart.innerHTML = card
-      .map((kebabOne) => {
-        let { id, item } = kebabOne;
-        let search = kebabList.find((y) => y.id === id) || [];
+      .map((BeerOne) => {
+        let { id, item } = BeerOne;
+        let search = beerList.find((y) => y.id === id) || [];
 
         return `
       <div class="cart-item">
@@ -34,11 +34,11 @@ let generateCartItems = () => {
 <i onclick="removeItem('${id}')" class="bi bi-x-lg"></i>
 </div>
 <div class= "cart-buttons">  <div class="plus-minus-buttons">
-<i  class="bi bi-dash-square" onclick="decrementCard('${kebabOne.id}')" ></i>
-<div class="quantity" id="${kebabOne.id}"> ${item}
+<i  class="bi bi-dash-square" onclick="decrementCard('${BeerOne.id}')" ></i>
+<div class="quantity" id="${BeerOne.id}"> ${item}
   
 </div>
-<i  class="bi bi-plus-square" onclick="incrementCard('${kebabOne.id}')" ></i>
+<i  class="bi bi-plus-square" onclick="incrementCard('${BeerOne.id}')" ></i>
 </div>
 }; </div>
 <h3>$ ${item * search.price}</h3>
@@ -63,7 +63,7 @@ let generateCartItems = () => {
 generateCartItems();
 
 let update = (id) => {
-  let search = card.find((kebabOne) => kebabOne.id === id);
+  let search = card.find((BeerOne) => BeerOne.id === id);
   console.log(search.item);
   document.getElementById(id).innerHTML = search.item;
   calculation();
@@ -95,13 +95,13 @@ let TotalAmount = () => {
   let amount = card
     .map((x) => {
       let { item, id } = x;
-      let search = kebabList.find((y) => y.id === id) || {}; //jak to dodaje to wywala
+      let search = beerList.find((y) => y.id === id) || {}; //jak to dodaje to wywala
       return item * search.price;
     })
     .reduce((x, y) => x + y, 0);
   // console.log(amount);
   label.innerHTML = `
-  <h2>Total Bill : $ ${amount}  </h2>
+  <h2>Total Bill : $ ${amount} </h2>
   <button class="checkout">Checkout</button>
   <button onclick ="clearCart()" class="RemoveAll">Clear Cart</button>
   `;

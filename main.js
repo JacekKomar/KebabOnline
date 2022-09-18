@@ -27,7 +27,7 @@ const generateKebabOne = (kebabOne) => {
 };
 
 //shop.innerHTML = generateKebabOne(kebabList[1]);
-shop.innerHTML += kebabList.map(generateKebabOne).join("");
+shop.innerHTML += foodList.map(generateKebabOne).join("");
 
 let update = (id) => {
   let search = card.find((kebabOne) => kebabOne.id === id);

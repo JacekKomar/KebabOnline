@@ -43,7 +43,7 @@ nav > ul > li {
 .Contact {
   color: rgb(0, 0, 0);
   padding: 0 auto;
-  margin-top: 300px;
+
   text-decoration: none;
   margin-left: 200px;
   margin-right: 20px;
@@ -57,7 +57,7 @@ nav > ul > li {
 .Center {
   color: white;
   padding: 0 auto;
-  margin-top: 1400px;
+
   text-decoration: none;
 
   margin-right: 4px;
@@ -87,12 +87,9 @@ nav > ul > li {
 }
 
 .columns-deskop {
-  margin-top: 1500px;
 }
 
 .restauration {
-  margin-top: 1200px;
-
   margin-left: 200px;
   margin-bottom: 20px;
   display: flex;
@@ -112,24 +109,22 @@ nav > ul > li {
   color: rgb(93, 211, 142);
 }
 .job {
-  margin-top: 200px;
   margin-left: 300px;
+  margin-top: -40px;
 }
 
 .job-text {
   text-decoration: none;
   display: flex;
-
+  margin-top: -80px;
   width: 500px;
   text-align: left;
-  margin-top: 140px;
 }
 
 .job-texttwo {
   text-decoration: none;
   display: flex;
-
-  margin-top: 600px;
+  margin-top: 260px;
   width: 600px;
   margin-left: -500px;
 }
@@ -140,18 +135,12 @@ main {
 
 .job-container {
   display: flex;
-  margin-top: 500px;
 }
 
 .index {
-  margin-top: 900px;
   margin-left: 280px;
   text-align: left;
   display: flex;
-}
-
-.Maklowicz {
-  margin-top: 1800px;
 }
 
 .Maklowicz-text {
@@ -212,7 +201,7 @@ main {
 .Center-drinks {
   color: white;
   padding: 0 auto;
-  margin-top: 1400px;
+
   text-decoration: none;
 
   margin-right: 4px;
@@ -230,7 +219,6 @@ main {
 }
 
 .columns-deskop-drinks {
-  margin-top: 1600px;
 }
 
 .shopping {
