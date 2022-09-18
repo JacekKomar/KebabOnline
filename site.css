@@ -86,9 +86,6 @@ nav > ul > li {
   display: flex;
 }
 
-.columns-deskop {
-}
-
 .restauration {
   margin-left: 200px;
   margin-bottom: 20px;
@@ -145,11 +142,13 @@ main {
 
 .Maklowicz-text {
   width: 500px;
+  margin-left: 40px;
 }
 
 .Kebab-biggest {
   flex-direction: row;
-  margin-top: 110px;
+  margin-top: -10px;
+  margin-left: 20px;
 }
 
 .flex-item {
@@ -216,9 +215,6 @@ main {
   background-color: rgb(71, 52, 0);
   color: #ffff;
   font-size: large;
-}
-
-.columns-deskop-drinks {
 }
 
 .shopping {
@@ -301,4 +297,15 @@ main {
   background-color: #212529;
   color: white;
   border-radius: 3px 6px;
+}
+
+.kebabDay {
+  display: flex;
+  flex-direction: row;
+}
+
+.Maklowicz {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
 }
