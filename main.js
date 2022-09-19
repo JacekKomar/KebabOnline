@@ -29,14 +29,4 @@ const generateKebabOne = (kebabOne) => {
 //shop.innerHTML = generateKebabOne(kebabList[1]);
 shop.innerHTML += foodList.map(generateKebabOne).join("");
 
-let update = (id) => {
-  let search = card.find((kebabOne) => kebabOne.id === id);
-
-  if (!search) {
-    return;
-  }
-  document.getElementById(id).innerHTML = search.item;
-  calculation();
-};
-
 calculation();

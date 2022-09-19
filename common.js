@@ -1,3 +1,13 @@
+let update = (id) => {
+  let search = card.find((kebabOne) => kebabOne.id === id);
+
+  if (!search) {
+    return;
+  }
+  document.getElementById(id).innerHTML = search.item;
+  calculation();
+};
+
 let calculation = () => {
   let cartIcon = document.getElementById("XD");
   cartIcon.innerHTML = card
@@ -6,6 +16,7 @@ let calculation = () => {
 };
 
 let increment = (clickedId) => {
+  console.log(clickedId);
   const findElement = (kebabOne) => kebabOne.id === clickedId;
 
   let search = card.find(findElement);
@@ -25,6 +36,7 @@ let increment = (clickedId) => {
   update(clickedId);
 };
 let decrement = (clickedId) => {
+  console.log(clickedId);
   let search = card.find((kebabOne) => kebabOne.id === clickedId);
 
   if (!search) {

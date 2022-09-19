@@ -62,14 +62,6 @@ let generateCartItems = () => {
 };
 generateCartItems();
 
-let update = (id) => {
-  let search = card.find((kebabOne) => kebabOne.id === id);
-  console.log(search.item);
-  document.getElementById(id).innerHTML = search.item;
-  calculation();
-  TotalAmount();
-};
-
 let removeItem = (id) => {
   let selectedItem = id;
   console.log(id);

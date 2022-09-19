@@ -1,13 +1,9 @@
 body {
   background-color: goldenrod;
+  margin: 0;
 }
 
 header {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: rgb(0, 0, 0);
   padding: 1px;
 }
@@ -26,14 +22,12 @@ nav > ul > li {
 }
 
 .container {
-  display: flex;
   height: 300px;
   background-color: red;
 }
 .container {
   font-family: arial;
   font-size: 24px;
-  margin: 25px;
 
   height: 200px;
   outline: dashed 1px black;
@@ -88,7 +82,7 @@ nav > ul > li {
 
 .restauration {
   margin-left: 200px;
-  margin-bottom: 20px;
+  margin-top: 70px;
   display: flex;
   flex-direction: row;
 }
@@ -107,13 +101,13 @@ nav > ul > li {
 }
 .job {
   margin-left: 300px;
-  margin-top: -40px;
+  margin-top: 100px;
 }
 
 .job-text {
   text-decoration: none;
   display: flex;
-  margin-top: -80px;
+  margin-top: 50px;
   width: 500px;
   text-align: left;
 }
@@ -121,13 +115,9 @@ nav > ul > li {
 .job-texttwo {
   text-decoration: none;
   display: flex;
-  margin-top: 260px;
-  width: 600px;
-  margin-left: -500px;
-}
 
-main {
-  margin-top: 400px;
+  width: 600px;
+  /* margin-left: -500px; */
 }
 
 .job-container {
@@ -147,7 +137,7 @@ main {
 
 .Kebab-biggest {
   flex-direction: row;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   margin-left: 20px;
 }
 

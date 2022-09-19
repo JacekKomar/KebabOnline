@@ -1,8 +1,7 @@
 const shop = document.getElementById("BeerListFromJavaScript");
 
 const generateBeerOne = (BeerOne) => {
-  let search =
-    card.find((szukanePiwo) => szukanePiwo.id === szukanePiwo.id) || [];
+  let search = card.find((szukanePiwo) => szukanePiwo.id === BeerOne.id) || [];
 
   return `  
   <div class="Kebab-drinks" id="${BeerOne}">
@@ -23,15 +22,5 @@ const generateBeerOne = (BeerOne) => {
 };
 
 shop.innerHTML += beerList.map(generateBeerOne).join("");
-
-let update = (id) => {
-  let search = card.find((BeerOne) => BeerOne.id === id);
-
-  if (!search) {
-    return;
-  }
-  document.getElementById(id).innerHTML = search.item;
-  calculation();
-};
 
 calculation();

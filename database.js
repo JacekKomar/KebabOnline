@@ -128,7 +128,7 @@ const kebabList = [
   },
 
   {
-    id: "beer7",
+    id: "beer_straznik_teksasu",
     img: "imagies/drinks/beer_7.png",
     titke: "Strażnik teksasu",
     category: "drink",
