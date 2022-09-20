@@ -1,4 +1,6 @@
-let update = (id) => {
+import { card } from "./database.js";
+
+export let update = (id) => {
   let search = card.find((kebabOne) => kebabOne.id === id);
 
   if (!search) {
@@ -8,14 +10,14 @@ let update = (id) => {
   calculation();
 };
 
-let calculation = () => {
+export let calculation = () => {
   let cartIcon = document.getElementById("XD");
   cartIcon.innerHTML = card
     .map((kebabOne) => kebabOne.item)
     .reduce((x, y) => x + y, 0);
 };
 
-let increment = (clickedId) => {
+export let increment = (clickedId) => {
   console.log(clickedId);
   const findElement = (kebabOne) => kebabOne.id === clickedId;
 
@@ -35,7 +37,7 @@ let increment = (clickedId) => {
   console.log(card);
   update(clickedId);
 };
-let decrement = (clickedId) => {
+export let decrement = (clickedId) => {
   console.log(clickedId);
   let search = card.find((kebabOne) => kebabOne.id === clickedId);
 
@@ -50,6 +52,9 @@ let decrement = (clickedId) => {
 
   console.log(card);
   update(clickedId);
-  card = card.filter((x) => x.item !== 0);
-  localStorage.setItem("data", JSON.stringify(card));
+  const cardFiltered = card.filter((x) => x.item !== 0);
+  localStorage.setItem("data", JSON.stringify(cardFiltered));
 };
+
+window.increment = increment;
+window.decrement = decrement;

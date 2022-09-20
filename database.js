@@ -1,4 +1,4 @@
-const kebabList = [
+export const kebabList = [
   {
     id: "KebabPizza",
     img: "imagies/foods/kebab_pizza.jpg",
@@ -171,8 +171,8 @@ const kebabList = [
       Zdrowotna`,
   },
 ];
-let card = JSON.parse(localStorage.getItem("data")) || [];
+export let card = JSON.parse(localStorage.getItem("data")) || [];
 // dokonczyc kebaby powyższe,
 
-const foodList = kebabList.filter((kebab) => kebab.category === "food");
-const beerList = kebabList.filter((kebab) => kebab.category === "drink");
+export const foodList = kebabList.filter((kebab) => kebab.category === "food");
+export const beerList = kebabList.filter((kebab) => kebab.category === "drink");
