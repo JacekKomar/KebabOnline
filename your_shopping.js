@@ -1,3 +1,6 @@
+import { beerList, kebabList, foodList, card } from "./database.js";
+import { calculation, decrement, increment, update } from "./common.js";
+
 let label = document.getElementById("label");
 let shoppingCart = document.getElementById("shopping-cart");
 
