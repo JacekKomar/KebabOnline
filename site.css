@@ -262,7 +262,7 @@ nav > ul > li {
 
 .shopping-cart {
   display: grid;
-  grid-template-columns: repeat(1, 320px);
+  grid-template-columns: repeat(1, 500px);
   justify-content: center;
   gap: 15px;
 }

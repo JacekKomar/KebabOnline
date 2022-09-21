@@ -26,7 +26,7 @@ let generateCartItems = () => {
 
         return `
       <div class="cart-item">
-        <img width="100" src=${search.img} alt=""/>
+        <img width="300" img height = "300" src=${search.img} alt=""/>
         <div class="details">
     
 <div class= "titke-price-x">
