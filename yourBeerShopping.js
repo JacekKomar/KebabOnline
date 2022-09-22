@@ -4,13 +4,13 @@ let shoppingCart = document.getElementById("shopping-cart");
 calculation();
 let incrementCard = (clickedId) => {
   increment(clickedId);
-  generateCartItems();
+  generateCartItems(card);
 };
 
 let decrementCard = (clickedId) => {
   decrement(clickedId);
 
-  generateCartItems();
+  generateCartItems(card);
 };
 
 let generateCartItems = () => {
@@ -60,7 +60,7 @@ let generateCartItems = () => {
 
   //test
 };
-generateCartItems();
+generateCartItems(card);
 
 let update = (id) => {
   let search = card.find((BeerOne) => BeerOne.id === id);
@@ -74,7 +74,7 @@ let removeItem = (id) => {
   let selectedItem = id;
   console.log(id);
   card = card.filter((x) => x.id !== selectedItem);
-  generateCartItems();
+  generateCartItems(card);
   TotalAmount();
   calculation();
   localStorage.setItem("data", JSON.stringify(card));
@@ -82,7 +82,7 @@ let removeItem = (id) => {
 
 let clearCart = () => {
   card = [];
-  generateCartItems();
+  generateCartItems(card);
   calculation();
   localStorage.setItem("data", JSON.stringify(card));
 };

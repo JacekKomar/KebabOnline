@@ -54,6 +54,7 @@ export let decrement = (clickedId) => {
   update(clickedId);
   const cardFiltered = card.filter((x) => x.item !== 0);
   localStorage.setItem("data", JSON.stringify(cardFiltered));
+  return cardFiltered;
 };
 
 window.increment = increment;

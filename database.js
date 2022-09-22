@@ -13,7 +13,7 @@ export const kebabList = [
     titke: "Kebab olbrzym",
     category: "food",
     price: 30.33,
-    desc: `długość: 50cm <br> sos: ostry/łagodny <br> mięso: baranina/kurczak </p>`,
+    desc: `długość: 50cm <br> sos: ostry/łagodny <br> mięso: baranina/kurczak`,
   },
   {
     id: "Kebab rollo",

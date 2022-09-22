@@ -7,19 +7,22 @@ let shoppingCart = document.getElementById("shopping-cart");
 calculation();
 let incrementCard = (clickedId) => {
   increment(clickedId);
-  generateCartItems();
+  generateCartItems(card);
 };
 
 let decrementCard = (clickedId) => {
-  decrement(clickedId);
+  const newCard = decrement(clickedId);
 
-  generateCartItems();
+  generateCartItems(newCard);
 };
 
-let generateCartItems = () => {
-  if (card.length !== 0) {
+window.incrementCard = incrementCard;
+window.decrementCard = decrementCard;
+
+let generateCartItems = (newCard) => {
+  if (newCard.length !== 0) {
     //return ?
-    shoppingCart.innerHTML = card
+    shoppingCart.innerHTML = newCard
       .map((kebabOne) => {
         let { id, item } = kebabOne;
         let search = kebabList.find((y) => y.id === id) || [];
@@ -63,24 +66,28 @@ let generateCartItems = () => {
 
   //test
 };
-generateCartItems();
+
+generateCartItems(card);
 
 let removeItem = (id) => {
   let selectedItem = id;
   console.log(id);
-  card = card.filter((x) => x.id !== selectedItem);
-  generateCartItems();
+  const newCard = card.filter((x) => x.id !== selectedItem);
+  generateCartItems(newCard);
   TotalAmount();
   calculation();
-  localStorage.setItem("data", JSON.stringify(card));
+  localStorage.setItem("data", JSON.stringify(newCard));
 };
+window.removeItem = removeItem;
 
 let clearCart = () => {
-  card = [];
-  generateCartItems();
+  const newCard = [];
+  generateCartItems(newCard);
   calculation();
-  localStorage.setItem("data", JSON.stringify(card));
+  localStorage.setItem("data", JSON.stringify(newCard));
 };
+
+window.clearCart = clearCart;
 
 let TotalAmount = () => {
   if (card.length === 0) {
