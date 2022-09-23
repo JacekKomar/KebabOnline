@@ -25,7 +25,7 @@ const generateKebabOne = (kebabOne) => {
   </div>
   <i  class="bi bi-plus-square" onclick="increment('${kebabOne.id}')" ></i>
 </div>
-<button class="button-kebab" data-order="kebabbig">Zamów</button>
+<button onclick="location.href='http://127.0.0.1:5500/your_shopping.html'" class="button-kebab" data-order="kebabbig">Zamów</button>
 </div>`;
 };
 
