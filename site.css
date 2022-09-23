@@ -277,6 +277,7 @@ nav > ul > li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 1px;
 }
 .titke-price {
   display: flex;

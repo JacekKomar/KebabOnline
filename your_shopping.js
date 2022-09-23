@@ -6,14 +6,16 @@ let shoppingCart = document.getElementById("shopping-cart");
 
 calculation();
 let incrementCard = (clickedId) => {
-  increment(clickedId);
+  const newCard = increment(clickedId);
   generateCartItems(card);
+  TotalAmount(newCard);
 };
 
 let decrementCard = (clickedId) => {
   const newCard = decrement(clickedId);
 
   generateCartItems(newCard);
+  TotalAmount(newCard);
 };
 
 window.incrementCard = incrementCard;
@@ -35,7 +37,7 @@ let generateCartItems = (newCard) => {
 <div class= "titke-price-x">
 <h4> 
 <p>${search.titke}</p> 
-<p class="cart-item-price">$ ${search.price}</p>
+<p class="cart-item-price"> ${search.price} zł</p>
 </h4 class="titke-price">
 <i onclick="removeItem('${id}')" class="bi bi-x-lg"></i>
 </div>
@@ -46,8 +48,8 @@ let generateCartItems = (newCard) => {
 </div>
 <i  class="bi bi-plus-square" onclick="incrementCard('${kebabOne.id}')" ></i>
 </div>
-}; </div>
-<h3>$ ${item * search.price}</h3>
+ </div>
+<h3> ${item * search.price} zł</h3>
         </div>
       </div>
 `;
@@ -56,9 +58,9 @@ let generateCartItems = (newCard) => {
   } else {
     shoppingCart.innerHTML = ``;
     label.innerHTML = `
-    <h2>Cart is Empty</h2>
+    <h2>Koszyk jest pusty</h2>
     <a href="index.html">
-      <button class="HomeBtn">Back to home</button>
+      <button class="HomeBtn">Wróć do strony głównej</button>
     </a>
     `;
   }
@@ -74,7 +76,7 @@ let removeItem = (id) => {
   console.log(id);
   const newCard = card.filter((x) => x.id !== selectedItem);
   generateCartItems(newCard);
-  TotalAmount();
+  TotalAmount(newCard);
   calculation();
   localStorage.setItem("data", JSON.stringify(newCard));
 };
@@ -89,7 +91,7 @@ let clearCart = () => {
 
 window.clearCart = clearCart;
 
-let TotalAmount = () => {
+let TotalAmount = (card) => {
   if (card.length === 0) {
     return;
   }
@@ -102,11 +104,12 @@ let TotalAmount = () => {
     })
     .reduce((x, y) => x + y, 0);
   // console.log(amount);
+
   label.innerHTML = `
-  <h2>Total Bill : $ ${amount}  </h2>
-  <button class="checkout">Checkout</button>
-  <button onclick ="clearCart()" class="RemoveAll">Clear Cart</button>
+  <h2>Pełny Koszt :  ${amount} zł </h2>
+  <button class="checkout">Przejdź do płatności</button>
+  <button onclick ="clearCart()" class="RemoveAll">Wyczyść Koszyk</button>
   `;
 };
 
-TotalAmount();
+TotalAmount(card);

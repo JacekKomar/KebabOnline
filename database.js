@@ -20,12 +20,12 @@ export const kebabList = [
     img: "imagies/foods/kebab_rollo.jpeg",
     titke: "Kebab rollo",
     category: "food",
-    price: 9.99,
+    price: 10.99,
     desc: `długość: 20 cm <br> sos: ostry/łagodny<br> mięso: baranina/kurczak <br>`,
   },
   {
     id: "Kebab on the plate",
-    img: "imagies/foods/kebab_on_the plate.png",
+    img: "imagies/foods/kebab_on_the_plate.jpg",
     titke: "Kebab na talerzu",
     category: "food",
     price: 19.99,
@@ -68,7 +68,7 @@ export const kebabList = [
     img: "imagies/foods/chips.png",
     titke: "Frytki",
     category: "food",
-    price: 7.99,
+    price: 10.99,
     desc: `własnej roboty <br> podane z cebulką <br> sos: keczup/majonez`,
   },
 

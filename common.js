@@ -1,6 +1,6 @@
 import { card } from "./database.js";
 
-export let update = (id) => {
+export let update = (card, id) => {
   let search = card.find((kebabOne) => kebabOne.id === id);
 
   if (!search) {
@@ -35,7 +35,8 @@ export let increment = (clickedId) => {
   localStorage.setItem("data", JSON.stringify(card));
 
   console.log(card);
-  update(clickedId);
+  update(card, clickedId);
+  return card;
 };
 export let decrement = (clickedId) => {
   console.log(clickedId);
@@ -51,7 +52,7 @@ export let decrement = (clickedId) => {
   localStorage.setItem("data", JSON.stringify(card));
 
   console.log(card);
-  update(clickedId);
+  update(card, clickedId);
   const cardFiltered = card.filter((x) => x.item !== 0);
   localStorage.setItem("data", JSON.stringify(cardFiltered));
   return cardFiltered;
