@@ -305,3 +305,15 @@ nav > ul > li {
 .restauration_text {
   margin-left: 15px;
 }
+
+.payment {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  background-color: rgb(48, 202, 48);
+  color: antiquewhite;
+}

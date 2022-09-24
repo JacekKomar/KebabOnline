@@ -107,7 +107,7 @@ let TotalAmount = (card) => {
 
   label.innerHTML = `
   <h2>Pełny Koszt :  ${amount} zł </h2>
-  <button class="checkout">Przejdź do płatności</button>
+  <button onclick="location.href='http://127.0.0.1:5500/payment.html'"class="checkout">Przejdź do płatności</button>
   <button onclick ="clearCart()" class="RemoveAll">Wyczyść Koszyk</button>
   `;
 };
