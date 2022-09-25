@@ -1,5 +1,11 @@
-import { beerList, kebabList, foodList, card } from "./database.js";
-import { calculation, decrement, increment, update } from "./common.js";
+import { beerList, kebabList, foodList } from "./database.js";
+import {
+  calculation,
+  decrement,
+  getCard,
+  increment,
+  update,
+} from "./common.js";
 
 export let label = document.getElementById("label");
 export let shoppingCart = document.getElementById("shopping-cart");
@@ -7,7 +13,7 @@ export let shoppingCart = document.getElementById("shopping-cart");
 calculation();
 let incrementCard = (clickedId) => {
   const newCard = increment(clickedId);
-  generateCartItems(card);
+  generateCartItems(newCard);
   TotalAmount(newCard);
 };
 
@@ -69,12 +75,11 @@ export let generateCartItems = (newCard) => {
   //test
 };
 
-generateCartItems(card);
+generateCartItems(getCard());
 
 let removeItem = (id) => {
   let selectedItem = id;
-  console.log(id);
-  const newCard = card.filter((x) => x.id !== selectedItem);
+  const newCard = getCard().filter((x) => x.id !== selectedItem);
   generateCartItems(newCard);
   TotalAmount(newCard);
   calculation();
@@ -91,11 +96,7 @@ let clearCart = () => {
 
 window.clearCart = clearCart;
 
-let TotalAmount = (card) => {
-  if (card.length === 0) {
-    return;
-  }
-
+export const getTotalAmountAsNumber = (card) => {
   let amount = card
     .map((x) => {
       let { item, id } = x;
@@ -103,7 +104,16 @@ let TotalAmount = (card) => {
       return item * search.price;
     })
     .reduce((x, y) => x + y, 0);
-  // console.log(amount);
+
+  return amount;
+};
+
+let TotalAmount = (card) => {
+  if (card.length === 0) {
+    return;
+  }
+
+  let amount = getTotalAmountAsNumber(card);
 
   label.innerHTML = `
   <h2>Pełny Koszt :  ${amount} zł </h2>
@@ -112,4 +122,4 @@ let TotalAmount = (card) => {
   `;
 };
 
-TotalAmount(card);
+TotalAmount(getCard());

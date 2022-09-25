@@ -1,4 +1,6 @@
-import { card } from "./database.js";
+export const getCard = () => {
+  return JSON.parse(localStorage.getItem("data")) || [];
+};
 
 export let update = (card, id) => {
   let search = card.find((kebabOne) => kebabOne.id === id);
@@ -12,7 +14,7 @@ export let update = (card, id) => {
 
 export let calculation = () => {
   let cartIcon = document.getElementById("XD");
-  cartIcon.innerHTML = card
+  cartIcon.innerHTML = getCard()
     .map((kebabOne) => kebabOne.item)
     .reduce((x, y) => x + y, 0);
 };
@@ -21,6 +23,7 @@ export let increment = (clickedId) => {
   console.log(clickedId);
   const findElement = (kebabOne) => kebabOne.id === clickedId;
 
+  const card = getCard();
   let search = card.find(findElement);
 
   if (search === undefined) {
@@ -40,6 +43,7 @@ export let increment = (clickedId) => {
 };
 export let decrement = (clickedId) => {
   console.log(clickedId);
+  const card = getCard();
   let search = card.find((kebabOne) => kebabOne.id === clickedId);
 
   if (!search) {

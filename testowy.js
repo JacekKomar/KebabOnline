@@ -1,6 +1,10 @@
 import { beerList, kebabList, foodList, card } from "./database.js";
 import { calculation, decrement, increment, update } from "./common.js";
-import { label, shoppingCart } from "./your_shopping.js";
+import {
+  label,
+  shoppingCart,
+  getTotalAmountAsNumber,
+} from "./your_shopping.js";
 
 let generateCartItems = (newCard) => {
   if (newCard.length !== 0) {
@@ -15,11 +19,7 @@ let TotalAmount = (card) => {
     return;
   }
 
-  let amount = card.map((x) => {
-    let { item, id } = x;
-    let search = kebabList.find((y) => y.id === id) || {}; //jak to dodaje to wywala
-    return item * search.price;
-  });
+  let amount = getTotalAmountAsNumber(card);
 
   label.innerHTML = `
   <h2>Pełny Koszt :  ${amount} zł </h2>
