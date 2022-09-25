@@ -1,8 +1,8 @@
 import { beerList, kebabList, foodList, card } from "./database.js";
 import { calculation, decrement, increment, update } from "./common.js";
 
-let label = document.getElementById("label");
-let shoppingCart = document.getElementById("shopping-cart");
+export let label = document.getElementById("label");
+export let shoppingCart = document.getElementById("shopping-cart");
 
 calculation();
 let incrementCard = (clickedId) => {
@@ -21,7 +21,7 @@ let decrementCard = (clickedId) => {
 window.incrementCard = incrementCard;
 window.decrementCard = decrementCard;
 
-let generateCartItems = (newCard) => {
+export let generateCartItems = (newCard) => {
   if (newCard.length !== 0) {
     //return ?
     shoppingCart.innerHTML = newCard
