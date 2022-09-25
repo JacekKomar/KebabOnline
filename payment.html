@@ -10,6 +10,18 @@
     <link rel="icon" href="icon.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <script>
+
+        function Information() {
+            alert("Zamówienie zostało złożone. Dziękujemy i smacznego.")
+
+
+        }
+
+    </script>
+
+
+
 </head>
 
 <body>
@@ -48,6 +60,10 @@
                                 <li><a href="your_shopping.html" class="XD">Twoje zakupy</a></li>
 
 
+
+
+
+
                             </p>
 
 
@@ -64,23 +80,24 @@
 
             <div>
                 Imię:
-                <input class="table" type="text" id="name">
+                <input class="table" size="30" type="text" id="name">
             </div>
 
             <div>
                 Nazwisko:
-                <input class="table" type="text" id="Username">
+                <input class="table" size="25" type="text" id="Username">
             </div>
             <div>
                 Adres Zamówienia:
-                <input class="table" type="text" id="Adress">
+                <input class="table" size="17" type="text" id="Adress">
             </div>
-            Numer telefonu:
-            <input class="table" type="text" id="Phone">
-
             <div>
-                Numer konta:
-                <input class="table" type="text" id="pay">
+                Numer telefonu:
+                <input class="table" type="text" id="Phone">
+            </div>
+            <div>
+                Podaj informacje o wybranych <br>sosach i mięsie:
+                <input class="table" type="text" id="info">
             </div>
 
         </form>
@@ -89,7 +106,7 @@
 
 
         <div class="button_order">
-            <button class="order"> Zamów</button>
+            <button class="order" onclick="Information()"> Zamów do swojego domu !</button>
 
         </div>
 

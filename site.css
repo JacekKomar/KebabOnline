@@ -39,10 +39,11 @@ nav > ul > li {
   padding: 0 auto;
 
   text-decoration: none;
-  margin-left: 200px;
-  margin-right: 20px;
+  margin-left: 710px;
+
   display: flex;
   text-align: left;
+  margin-top: 60px;
 }
 
 .headers {
@@ -110,6 +111,7 @@ nav > ul > li {
   margin-top: 50px;
   width: 500px;
   text-align: left;
+  list-style-position: inside;
 }
 
 .job-texttwo {
@@ -138,8 +140,8 @@ nav > ul > li {
 
 .Kebab-biggest {
   flex-direction: row;
-  /* margin-top: -10px; */
-  margin-left: 20px;
+
+  list-style-position: inside;
 }
 
 .flex-item {
@@ -314,6 +316,37 @@ nav > ul > li {
 }
 
 .order {
-  background-color: rgb(48, 202, 48);
+  background-color: darkgreen;
   color: antiquewhite;
+  font-size: medium;
+}
+
+.table {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.button_order {
+  margin-top: 20px;
+}
+
+.mailto:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+.mailto {
+  color: #212529;
+}
+
+.phone_number:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+.phone_number {
+  color: black;
+}
+
+.contact_photos {
+  margin-left: 800px;
+  margin-top: 360px;
 }

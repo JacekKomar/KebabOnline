@@ -2,7 +2,7 @@ export const kebabList = [
   {
     id: "KebabPizza",
     img: "imagies/foods/kebab_pizza.jpg",
-    titke: "Kebab pizza",
+    titke: "Kebab pizza na 4 osoby",
     category: "food",
     price: 39.99,
     desc: `Pizza z mięsem Kebab <br> sos: ostry/łagodny <br>mięso: baranina/kurczak`,
@@ -18,7 +18,7 @@ export const kebabList = [
   {
     id: "Kebab rollo",
     img: "imagies/foods/kebab_rollo.jpeg",
-    titke: "Kebab rollo",
+    titke: "Kebab rollo małe",
     category: "food",
     price: 10.99,
     desc: `długość: 20 cm <br> sos: ostry/łagodny<br> mięso: baranina/kurczak <br>`,
@@ -42,7 +42,7 @@ export const kebabList = [
   {
     id: "kebab burger",
     img: "imagies/foods/kebab_burger.jpg",
-    titke: "kebab burger",
+    titke: "kebab burgerowy",
     category: "food",
     price: 25.5,
     desc: `pieczywo: jasne/ciemne <br> sos: ostry/łagodny <br> mięso: baranina/kurczak`,
@@ -52,7 +52,7 @@ export const kebabList = [
     img: "imagies/foods/box_1.jpg",
     titke: "Kebab box duży",
     category: "food",
-    price: 15.7,
+    price: 15.5,
     desc: `sos: czosnkowy/miodowy <br> sos w pojemniczku <br> mięso: baranina/kurczak`,
   },
   {
