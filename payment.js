@@ -1,5 +1,5 @@
-import { beerList, kebabList, foodList, card } from "./database.js";
-import { calculation, decrement, increment, update } from "./common.js";
+import { card } from "./database.js";
+
 import {
   label,
   shoppingCart,

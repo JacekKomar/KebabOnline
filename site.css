@@ -360,3 +360,19 @@ nav > ul > li {
 .counter_price {
   margin-top: 200px;
 }
+
+.noumber_one {
+  text-decoration: none;
+  color: white;
+}
+.noumber_one:hover {
+  text-decoration: underline;
+}
+
+.noumber_two {
+  text-decoration: none;
+  color: white;
+}
+.noumber_two:hover {
+  text-decoration: underline;
+}
