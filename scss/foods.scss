@@ -9,3 +9,29 @@
   flex-wrap: wrap;
   margin-left: 240px;
 }
+
+.Kebab-pizza {
+  color: $kebabSiteHeaderBackground;
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: $kebabSiteHeaderBackground;
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+
+  flex-direction: column;
+
+  background-color: $menuChoiceColor;
+}
+.Foods {
+  display: flex;
+}
+.button-kebab {
+  width: 310px;
+  height: 50px;
+  background-color: $buttonOrderColor;
+  color: $buttonsTextColor;
+  font-size: large;
+}

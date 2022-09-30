@@ -13,3 +13,52 @@
     gap: 15px;
   }
 }
+
+.HomeBtn,
+.checkout,
+.RemoveAll {
+  background-color: $kebabSiteHeaderBackground;
+  color: $buttonsTextColor;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.checkout {
+  background-color: $ClickToPayButtonColor;
+}
+.RemoveAll {
+  background-color: $minusColor;
+}
+.bi-x-lg {
+  color: $minusColor;
+  font-weight: bold;
+}
+.cart-item {
+  border: 2px solid $kebabSiteHeaderBackground;
+  border-radius: 5px;
+  display: flex;
+}
+
+.titke-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1px;
+}
+.titke-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-item-price {
+  background-color: $kebabSiteHeaderBackground;
+  color: $buttonsTextColor;
+  border-radius: 3px 6px;
+}
+
+.payment {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}

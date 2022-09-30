@@ -56,6 +56,20 @@ nav > ul > li {
   color: rgb(93, 211, 142);
 }
 
+.plus-minus-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bi-dash-square {
+  color: red;
+}
+
+.bi-plus-square {
+  color: rgb(56, 87, 9);
+}
+
 .index {
   margin-left: 500px;
   text-align: left;
@@ -132,6 +146,61 @@ nav > ul > li {
   gap: 15px;
 }
 
+.HomeBtn,
+.checkout,
+.RemoveAll {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.RemoveAll {
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+.cart-item {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+}
+
+.titke-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1px;
+}
+
+.titke-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 3px 6px;
+}
+
+.payment {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
 .job {
   display: flex;
   margin-left: 170px;
@@ -189,14 +258,6 @@ nav > ul > li {
   margin-left: 240px;
 }
 
-.page-selection {
-  color: white;
-}
-
-.headers {
-  text-decoration: none;
-}
-
 .Kebab-pizza {
   color: rgb(0, 0, 0);
   padding: 0 auto;
@@ -215,6 +276,22 @@ nav > ul > li {
   display: flex;
 }
 
+.button-kebab {
+  width: 310px;
+  height: 50px;
+  background-color: darkgreen;
+  color: white;
+  font-size: large;
+}
+
+.page-selection {
+  color: white;
+}
+
+.headers {
+  text-decoration: none;
+}
+
 .nawigacja {
   font-size: 20pt;
 }
@@ -230,112 +307,4 @@ nav > ul > li {
   font-weight: bold;
   font-size: 3em;
   text-align: center;
-}
-
-.drinks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.button-kebab {
-  width: 310px;
-  height: 50px;
-  background-color: darkgreen;
-  color: white;
-  font-size: large;
-}
-
-.Kebab-drinks {
-  color: rgb(0, 0, 0);
-  padding: 0 auto;
-  margin-top: 8px;
-  text-decoration: none;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  display: flex;
-  margin-top: 51px;
-  margin-left: 40px;
-  flex-direction: column;
-  background-color: bisque;
-}
-
-.button-drinks {
-  width: 310px;
-  height: 50px;
-  background-color: rgb(71, 52, 0);
-  color: white;
-  font-size: large;
-}
-
-.plus-minus-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.bi-dash-square {
-  color: red;
-}
-
-.bi-plus-square {
-  color: rgb(56, 87, 9);
-}
-
-.HomeBtn,
-.checkout,
-.RemoveAll {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  padding: 6px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.checkout {
-  background-color: green;
-}
-
-.RemoveAll {
-  background-color: red;
-}
-
-.bi-x-lg {
-  color: red;
-  font-weight: bold;
-}
-
-.cart-item {
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  display: flex;
-}
-
-.titke-price-x {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 1px;
-}
-
-.titke-price {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.cart-item-price {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border-radius: 3px 6px;
-}
-
-.payment {
-  margin-top: 200px;
-  margin-left: 400px;
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=site.css.map */

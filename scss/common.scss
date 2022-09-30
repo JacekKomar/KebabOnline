@@ -54,3 +54,17 @@ nav > ul > li {
   text-decoration: underline;
   color: $plusColor;
 }
+
+.plus-minus-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bi-dash-square {
+  color: $minusColor;
+}
+
+.bi-plus-square {
+  color: $plusButtonInYourShoppingColor;
+}

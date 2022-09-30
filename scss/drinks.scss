@@ -9,3 +9,35 @@
   flex-wrap: wrap;
   margin-left: 240px;
 }
+
+.drinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.Kebab-drinks {
+  color: $kebabSiteHeaderBackground;
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: $kebabSiteHeaderBackground;
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+
+  flex-direction: column;
+
+  background-color: $menuChoiceColor;
+}
+.button-drinks {
+  width: 310px;
+  height: 50px;
+  background-color: $drinksOrderButtonColor;
+  color: $buttonsTextColor;
+  font-size: large;
+}
