@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .job {
   display: flex;
   margin-left: 170px;
@@ -22,4 +24,11 @@
 
     width: 600px;
   }
+}
+.mailto {
+  color: $kebabSiteHeaderBackground;
+}
+.mailto:hover {
+  text-decoration: underline;
+  color: $mailLinkColor;
 }
