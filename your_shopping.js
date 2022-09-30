@@ -10,6 +10,10 @@ import {
 export let label = document.getElementById("label");
 export let shoppingCart = document.getElementById("shopping-cart");
 
+export const parseZlotowki = (floatNumber) => {
+  return parseFloat(floatNumber).toFixed(2);
+};
+
 calculation();
 let incrementCard = (clickedId) => {
   const newCard = increment(clickedId);
@@ -35,6 +39,8 @@ export let generateCartItems = (newCard) => {
         let { id, item } = kebabOne;
         let search = kebabList.find((y) => y.id === id) || [];
 
+        const price = parseZlotowki(item * search.price);
+
         return `
       <div class="cart-item">
         <img width="300" img height = "300" src=${search.img} alt=""/>
@@ -55,7 +61,7 @@ export let generateCartItems = (newCard) => {
 <i  class="bi bi-plus-square" onclick="incrementCard('${kebabOne.id}')" ></i>
 </div>
  </div>
-<h3> ${item * search.price} zł</h3>
+<h3> ${price} zł</h3>
         </div>
       </div>
 `;
@@ -114,9 +120,10 @@ let TotalAmount = (card) => {
   }
 
   let amount = getTotalAmountAsNumber(card);
+  const amountRounded = parseZlotowki(amount);
 
   label.innerHTML = `
-  <h2>Pełny Koszt :  ${amount} zł </h2>
+  <h2>Pełny Koszt :  ${amountRounded} zł </h2>
   <button onclick="location.href='http://127.0.0.1:5500/payment.html'"class="checkout">Przejdź do płatności</button>
   <button onclick ="clearCart()" class="RemoveAll">Wyczyść Koszyk</button>
   `;

@@ -5,7 +5,6 @@
 // - potworzyć pliki scss pod każdą podstronę, i tam wydzielić style do każdej podstrony
 // - stworzyć plik scss z WSPÓLNYMI stylami
 // - zrobić osobny plik scss, w którym będą tylko zmienne z kolorami
-// -
 
 @import "colors.scss";
 
@@ -26,16 +25,12 @@ nav > ul > li {
 }
 
 .page-selection {
-  color: #ffff;
+  color: $buttonsTextColor;
 }
 .XD {
-  color: #ffff;
+  color: $buttonsTextColor;
 }
 
-.container {
-  // height: 300px;
-  // background-color: red;
-}
 .container {
   font-family: arial;
   font-size: 24px;
@@ -46,7 +41,7 @@ nav > ul > li {
 }
 
 .Contact {
-  color: rgb(0, 0, 0);
+  color: $kebabSiteHeaderBackground;
   padding: 0 auto;
 
   text-decoration: none;
@@ -61,7 +56,7 @@ nav > ul > li {
   text-decoration: none;
 }
 .Center {
-  color: white;
+  color: $buttonsTextColor;
   padding: 0 auto;
 
   text-decoration: none;
@@ -73,19 +68,19 @@ nav > ul > li {
 }
 
 .Kebab-pizza {
-  color: rgb(0, 0, 0);
+  color: $kebabSiteHeaderBackground;
   padding: 0 auto;
   margin-top: 8px;
   text-decoration: none;
   border-style: solid;
-  border-color: rgb(0, 0, 0);
+  border-color: $kebabSiteHeaderBackground;
   display: flex;
   margin-top: 51px;
   margin-left: 40px;
 
   flex-direction: column;
 
-  background-color: bisque;
+  background-color: $menuChoiceColor;
 }
 
 .Foods {
@@ -109,7 +104,7 @@ nav > ul > li {
 
 .XD:hover {
   text-decoration: underline;
-  color: rgb(93, 211, 142);
+  color: $plusColor;
 }
 
 .job {
@@ -135,7 +130,6 @@ nav > ul > li {
     display: flex;
 
     width: 600px;
-    /* margin-left: -500px; */
   }
 }
 
@@ -157,13 +151,13 @@ nav > ul > li {
 }
 
 .flex-item {
-  background: tomato;
+  background: $flex-item;
   padding: 5px;
   width: 200px;
   height: 150px;
   margin-top: 10px;
   line-height: 150px;
-  color: white;
+  color: $buttonsTextColor;
   font-weight: bold;
   font-size: 3em;
   text-align: center;
@@ -182,28 +176,28 @@ nav > ul > li {
 .button-kebab {
   width: 310px;
   height: 50px;
-  background-color: darkgreen;
-  color: #ffff;
+  background-color: $buttonOrderColor;
+  color: $buttonsTextColor;
   font-size: large;
 }
 
 .Kebab-drinks {
-  color: rgb(0, 0, 0);
+  color: $kebabSiteHeaderBackground;
   padding: 0 auto;
   margin-top: 8px;
   text-decoration: none;
   border-style: solid;
-  border-color: rgb(0, 0, 0);
+  border-color: $kebabSiteHeaderBackground;
   display: flex;
   margin-top: 51px;
   margin-left: 40px;
 
   flex-direction: column;
 
-  background-color: bisque;
+  background-color: $menuChoiceColor;
 }
 .Center-drinks {
-  color: white;
+  color: $buttonsTextColor;
   padding: 0 auto;
 
   text-decoration: none;
@@ -217,13 +211,9 @@ nav > ul > li {
 .button-drinks {
   width: 310px;
   height: 50px;
-  background-color: rgb(71, 52, 0);
-  color: #ffff;
+  background-color: $drinksOrderButtonColor;
+  color: $buttonsTextColor;
   font-size: large;
-}
-
-.shopping {
-  color: aliceblue;
 }
 
 .plus-minus-buttons {
@@ -233,11 +223,11 @@ nav > ul > li {
 }
 
 .bi-dash-square {
-  color: red;
+  color: $minusColor;
 }
 
 .bi-plus-square {
-  color: rgb(56, 87, 9);
+  color: $plusButtonInYourShoppingColor;
 }
 
 .cart {
@@ -256,22 +246,22 @@ nav > ul > li {
 .HomeBtn,
 .checkout,
 .RemoveAll {
-  background-color: black;
-  color: white;
+  background-color: $kebabSiteHeaderBackground;
+  color: $buttonsTextColor;
   padding: 6px;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .checkout {
-  background-color: green;
+  background-color: $ClickToPayButtonColor;
 }
 .RemoveAll {
-  background-color: red;
+  background-color: $minusColor;
 }
 
 .bi-x-lg {
-  color: red;
+  color: $minusColor;
   font-weight: bold;
 }
 
@@ -282,7 +272,7 @@ nav > ul > li {
   gap: 15px;
 }
 .cart-item {
-  border: 2px solid #212529;
+  border: 2px solid $kebabSiteHeaderBackground;
   border-radius: 5px;
   display: flex;
 }
@@ -300,8 +290,8 @@ nav > ul > li {
 }
 
 .cart-item-price {
-  background-color: #212529;
-  color: white;
+  background-color: $kebabSiteHeaderBackground;
+  color: $buttonsTextColor;
   border-radius: 3px 6px;
 }
 
@@ -328,8 +318,8 @@ nav > ul > li {
 }
 
 .order {
-  background-color: darkgreen;
-  color: antiquewhite;
+  background-color: $buttonOrderColor;
+  color: $payAndOrderButtonColor;
   font-size: medium;
 }
 
@@ -345,18 +335,18 @@ nav > ul > li {
 
 .mailto:hover {
   text-decoration: underline;
-  color: rgb(33, 124, 71);
+  color: $mailLinkColor;
 }
 .mailto {
-  color: #212529;
+  color: $kebabSiteHeaderBackground;
 }
 
 .phone_number:hover {
   text-decoration: underline;
-  color: rgb(33, 124, 71);
+  color: $mailLinkColor;
 }
 .phone_number {
-  color: black;
+  color: $kebabSiteHeaderBackground;
 }
 
 .contact_photos {
@@ -375,7 +365,7 @@ nav > ul > li {
 
 .noumber_one {
   text-decoration: none;
-  color: white;
+  color: $buttonsTextColor;
 }
 .noumber_one:hover {
   text-decoration: underline;
@@ -383,7 +373,7 @@ nav > ul > li {
 
 .noumber_two {
   text-decoration: none;
-  color: white;
+  color: $buttonsTextColor;
 }
 .noumber_two:hover {
   text-decoration: underline;

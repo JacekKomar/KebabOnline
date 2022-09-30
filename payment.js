@@ -4,6 +4,7 @@ import {
   label,
   shoppingCart,
   getTotalAmountAsNumber,
+  parseZlotowki,
 } from "./your_shopping.js";
 
 let generateCartItems = (newCard) => {
@@ -22,7 +23,7 @@ let TotalAmount = (card) => {
   let amount = getTotalAmountAsNumber(card);
 
   label.innerHTML = `
-  <h2>Pełny Koszt :  ${amount} zł </h2>
+  <h2>Pełny Koszt :  ${amountRounded} zł </h2>
   
   `;
 };

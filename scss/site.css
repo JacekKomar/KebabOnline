@@ -192,10 +192,6 @@ nav > ul > li {
   font-size: large;
 }
 
-.shopping {
-  color: aliceblue;
-}
-
 .plus-minus-buttons {
   display: flex;
   flex-direction: row;
@@ -365,4 +361,4 @@ nav > ul > li {
 
 .noumber_two:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=site.css.map */
+} /*# sourceMappingURL=site.css.map */
