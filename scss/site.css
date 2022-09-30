@@ -14,19 +14,69 @@ nav > ul > li {
   margin: 0 5px;
 }
 
-.page-selection {
+.container {
+  font-family: arial;
+  font-size: 24px;
+  height: 200px;
+  text-align: center;
+}
+
+.noumber_one {
+  text-decoration: none;
   color: white;
+}
+
+.noumber_one:hover {
+  text-decoration: underline;
+}
+
+.noumber_two {
+  text-decoration: none;
+  color: white;
+}
+
+.noumber_two:hover {
+  text-decoration: underline;
+}
+
+.cart {
+  display: flex;
 }
 
 .XD {
   color: white;
 }
 
-.container {
-  font-family: arial;
-  font-size: 24px;
-  height: 200px;
-  text-align: center;
+.XD {
+  text-decoration: none;
+}
+
+.XD:hover {
+  text-decoration: underline;
+  color: rgb(93, 211, 142);
+}
+
+.index {
+  margin-left: 500px;
+  text-align: left;
+  display: flex;
+}
+.index-kebabDay {
+  display: flex;
+  flex-direction: row;
+}
+.index-Kebab-biggest {
+  flex-direction: row;
+  list-style-position: inside;
+}
+.index-Maklowicz {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.index-Maklowicz-text {
+  width: 500px;
+  margin-left: 40px;
 }
 
 .Contact {
@@ -38,37 +88,23 @@ nav > ul > li {
   text-align: left;
   margin-top: 60px;
 }
-
-.headers {
-  text-decoration: none;
-}
-
-.Center {
-  color: white;
-  padding: 0 auto;
-  text-decoration: none;
-  margin-right: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 240px;
-}
-
-.Kebab-pizza {
+.Contact-phone_number {
   color: rgb(0, 0, 0);
-  padding: 0 auto;
-  margin-top: 8px;
-  text-decoration: none;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  display: flex;
-  margin-top: 51px;
-  margin-left: 40px;
-  flex-direction: column;
-  background-color: bisque;
 }
-
-.Foods {
-  display: flex;
+.Contact-phone_number:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+.Contact-mailto {
+  color: rgb(0, 0, 0);
+}
+.Contact-mailto:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+.Contact-photos {
+  margin-left: 800px;
+  margin-top: 360px;
 }
 
 .restauration {
@@ -77,18 +113,23 @@ nav > ul > li {
   display: flex;
   flex-direction: row;
 }
-
-.nawigacja {
-  font-size: 20pt;
+.restauration-text {
+  margin-left: 15px;
 }
 
-.XD {
-  text-decoration: none;
+.shopping-article {
+  margin-top: 70px;
+  text-align: center;
 }
-
-.XD:hover {
-  text-decoration: underline;
-  color: rgb(93, 211, 142);
+.shopping-article-text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.shopping-article-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  justify-content: center;
+  gap: 15px;
 }
 
 .job {
@@ -111,23 +152,71 @@ nav > ul > li {
   text-decoration: none;
   display: flex;
   width: 600px;
-  /* margin-left: -500px; */
 }
 
-.index {
-  margin-left: 500px;
-  text-align: left;
+.counter_price {
+  margin-top: 200px;
+}
+.counter_price-text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.counter_price-payFor {
+  margin-top: 240px;
+  margin-left: 820px;
+}
+.counter_price-table {
+  font-weight: 500;
+  font-size: medium;
+}
+.counter_price-button_order {
+  margin-top: 20px;
+  margin-left: 820px;
+}
+.counter_price-order {
+  background-color: darkgreen;
+  color: antiquewhite;
+  font-size: medium;
+}
+
+.Center {
+  color: white;
+  padding: 0 auto;
+  text-decoration: none;
+  margin-right: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px;
+}
+
+.page-selection {
+  color: white;
+}
+
+.headers {
+  text-decoration: none;
+}
+
+.Kebab-pizza {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.Foods {
   display: flex;
 }
 
-.Maklowicz-text {
-  width: 500px;
-  margin-left: 40px;
-}
-
-.Kebab-biggest {
-  flex-direction: row;
-  list-style-position: inside;
+.nawigacja {
+  font-size: 20pt;
 }
 
 .flex-item {
@@ -174,16 +263,6 @@ nav > ul > li {
   background-color: bisque;
 }
 
-.Center-drinks {
-  color: white;
-  padding: 0 auto;
-  text-decoration: none;
-  margin-right: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 240px;
-}
-
 .button-drinks {
   width: 310px;
   height: 50px;
@@ -206,24 +285,10 @@ nav > ul > li {
   color: rgb(56, 87, 9);
 }
 
-.cart {
-  display: flex;
-}
-
-.shopping-article {
-  margin-top: 70px;
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .HomeBtn,
 .checkout,
 .RemoveAll {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   padding: 6px;
   border-radius: 3px;
@@ -243,15 +308,8 @@ nav > ul > li {
   font-weight: bold;
 }
 
-.shopping-cart {
-  display: grid;
-  grid-template-columns: repeat(1, 500px);
-  justify-content: center;
-  gap: 15px;
-}
-
 .cart-item {
-  border: 2px solid #212529;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   display: flex;
 }
@@ -270,24 +328,9 @@ nav > ul > li {
 }
 
 .cart-item-price {
-  background-color: #212529;
+  background-color: rgb(0, 0, 0);
   color: white;
   border-radius: 3px 6px;
-}
-
-.kebabDay {
-  display: flex;
-  flex-direction: row;
-}
-
-.Maklowicz {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-}
-
-.restauration_text {
-  margin-left: 15px;
 }
 
 .payment {
@@ -295,70 +338,4 @@ nav > ul > li {
   margin-left: 400px;
   display: flex;
   flex-direction: column;
-}
-
-.order {
-  background-color: darkgreen;
-  color: antiquewhite;
-  font-size: medium;
-}
-
-.table {
-  font-weight: 500;
-  font-size: medium;
-}
-
-.button_order {
-  margin-top: 20px;
-  margin-left: 820px;
-}
-
-.mailto:hover {
-  text-decoration: underline;
-  color: rgb(33, 124, 71);
-}
-
-.mailto {
-  color: #212529;
-}
-
-.phone_number:hover {
-  text-decoration: underline;
-  color: rgb(33, 124, 71);
-}
-
-.phone_number {
-  color: black;
-}
-
-.contact_photos {
-  margin-left: 800px;
-  margin-top: 360px;
-}
-
-.payFor {
-  margin-top: 240px;
-  margin-left: 820px;
-}
-
-.counter_price {
-  margin-top: 200px;
-}
-
-.noumber_one {
-  text-decoration: none;
-  color: white;
-}
-
-.noumber_one:hover {
-  text-decoration: underline;
-}
-
-.noumber_two {
-  text-decoration: none;
-  color: white;
-}
-
-.noumber_two:hover {
-  text-decoration: underline;
-} /*# sourceMappingURL=site.css.map */
+}/*# sourceMappingURL=site.css.map */

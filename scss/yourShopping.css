@@ -1,0 +1,14 @@
+.shopping-article {
+  margin-top: 70px;
+  text-align: center;
+}
+.shopping-article-text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.shopping-article-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  justify-content: center;
+  gap: 15px;
+}/*# sourceMappingURL=yourShopping.css.map */

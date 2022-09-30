@@ -1,0 +1,9 @@
+.restauration {
+  margin-left: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.restauration-text {
+  margin-left: 15px;
+}/*# sourceMappingURL=restauration.css.map */

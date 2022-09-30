@@ -1,0 +1,10 @@
+.restauration {
+  margin-left: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+
+  &-text {
+    margin-left: 15px;
+  }
+}

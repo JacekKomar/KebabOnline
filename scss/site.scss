@@ -1,70 +1,26 @@
 // TODO - co jacko ma zrobić
-// - wszystkie kolory wynieść do zmiennych i użyć te zmienne, tak jak $kebabSiteBackground
+
 // - spróbować pogrupować klasy tak jak .job i w środku te podklasy job
-// - oglądać mądry filmik o scss
+
 // - potworzyć pliki scss pod każdą podstronę, i tam wydzielić style do każdej podstrony
 // - stworzyć plik scss z WSPÓLNYMI stylami
-// - zrobić osobny plik scss, w którym będą tylko zmienne z kolorami
 
 @import "colors.scss";
-
-body {
-  background-color: $kebabSiteBackground;
-  margin: 0;
-}
-
-header {
-  background-color: $kebabSiteHeaderBackground;
-  padding: 1px;
-}
-nav > ul > li {
-  display: inline-block;
-  list-style: none;
-
-  margin: 0 5px;
-}
+@import "common.scss";
+@import "index.scss";
+@import "contact.scss";
+@import "restauration.scss";
+@import "yourShopping.scss";
+@import "job.scss";
+@import "payment.scss";
+@import "foods.scss";
 
 .page-selection {
   color: $buttonsTextColor;
 }
-.XD {
-  color: $buttonsTextColor;
-}
-
-.container {
-  font-family: arial;
-  font-size: 24px;
-
-  height: 200px;
-
-  text-align: center;
-}
-
-.Contact {
-  color: $kebabSiteHeaderBackground;
-  padding: 0 auto;
-
-  text-decoration: none;
-  margin-left: 710px;
-
-  display: flex;
-  text-align: left;
-  margin-top: 60px;
-}
 
 .headers {
   text-decoration: none;
-}
-.Center {
-  color: $buttonsTextColor;
-  padding: 0 auto;
-
-  text-decoration: none;
-
-  margin-right: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 240px;
 }
 
 .Kebab-pizza {
@@ -87,67 +43,8 @@ nav > ul > li {
   display: flex;
 }
 
-.restauration {
-  margin-left: 300px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-}
-
 .nawigacja {
   font-size: 20pt;
-}
-
-.XD {
-  text-decoration: none;
-}
-
-.XD:hover {
-  text-decoration: underline;
-  color: $plusColor;
-}
-
-.job {
-  display: flex;
-  margin-left: 170px;
-
-  &-info {
-    margin-left: 300px;
-    margin-top: 100px;
-  }
-
-  &-text {
-    text-decoration: none;
-    display: flex;
-    margin-top: 50px;
-    width: 500px;
-    text-align: left;
-    list-style-position: inside;
-  }
-
-  &-texttwo {
-    text-decoration: none;
-    display: flex;
-
-    width: 600px;
-  }
-}
-
-.index {
-  margin-left: 500px;
-  text-align: left;
-  display: flex;
-}
-
-.Maklowicz-text {
-  width: 500px;
-  margin-left: 40px;
-}
-
-.Kebab-biggest {
-  flex-direction: row;
-
-  list-style-position: inside;
 }
 
 .flex-item {
@@ -196,17 +93,6 @@ nav > ul > li {
 
   background-color: $menuChoiceColor;
 }
-.Center-drinks {
-  color: $buttonsTextColor;
-  padding: 0 auto;
-
-  text-decoration: none;
-
-  margin-right: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 240px;
-}
 
 .button-drinks {
   width: 310px;
@@ -230,19 +116,6 @@ nav > ul > li {
   color: $plusButtonInYourShoppingColor;
 }
 
-.cart {
-  display: flex;
-}
-
-.shopping-article {
-  margin-top: 70px;
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 20px;
-}
 .HomeBtn,
 .checkout,
 .RemoveAll {
@@ -265,12 +138,6 @@ nav > ul > li {
   font-weight: bold;
 }
 
-.shopping-cart {
-  display: grid;
-  grid-template-columns: repeat(1, 500px);
-  justify-content: center;
-  gap: 15px;
-}
 .cart-item {
   border: 2px solid $kebabSiteHeaderBackground;
   border-radius: 5px;
@@ -295,86 +162,9 @@ nav > ul > li {
   border-radius: 3px 6px;
 }
 
-.kebabDay {
-  display: flex;
-  flex-direction: row;
-}
-
-.Maklowicz {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-}
-
-.restauration_text {
-  margin-left: 15px;
-}
-
 .payment {
   margin-top: 200px;
   margin-left: 400px;
   display: flex;
   flex-direction: column;
-}
-
-.order {
-  background-color: $buttonOrderColor;
-  color: $payAndOrderButtonColor;
-  font-size: medium;
-}
-
-.table {
-  font-weight: 500;
-  font-size: medium;
-}
-
-.button_order {
-  margin-top: 20px;
-  margin-left: 820px;
-}
-
-.mailto:hover {
-  text-decoration: underline;
-  color: $mailLinkColor;
-}
-.mailto {
-  color: $kebabSiteHeaderBackground;
-}
-
-.phone_number:hover {
-  text-decoration: underline;
-  color: $mailLinkColor;
-}
-.phone_number {
-  color: $kebabSiteHeaderBackground;
-}
-
-.contact_photos {
-  margin-left: 800px;
-  margin-top: 360px;
-}
-
-.payFor {
-  margin-top: 240px;
-  margin-left: 820px;
-}
-
-.counter_price {
-  margin-top: 200px;
-}
-
-.noumber_one {
-  text-decoration: none;
-  color: $buttonsTextColor;
-}
-.noumber_one:hover {
-  text-decoration: underline;
-}
-
-.noumber_two {
-  text-decoration: none;
-  color: $buttonsTextColor;
-}
-.noumber_two:hover {
-  text-decoration: underline;
 }

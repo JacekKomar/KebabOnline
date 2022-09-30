@@ -1,0 +1,33 @@
+.Contact {
+  color: $kebabSiteHeaderBackground;
+  padding: 0 auto;
+
+  text-decoration: none;
+  margin-left: 710px;
+
+  display: flex;
+  text-align: left;
+  margin-top: 60px;
+
+  &-phone_number {
+    color: $kebabSiteHeaderBackground;
+  }
+
+  &-phone_number:hover {
+    text-decoration: underline;
+    color: $mailLinkColor;
+  }
+
+  &-mailto {
+    color: $kebabSiteHeaderBackground;
+  }
+  &-mailto:hover {
+    text-decoration: underline;
+    color: $mailLinkColor;
+  }
+
+  &-photos {
+    margin-left: 800px;
+    margin-top: 360px;
+  }
+}

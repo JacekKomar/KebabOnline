@@ -1,0 +1,56 @@
+body {
+  background-color: $kebabSiteBackground;
+  margin: 0;
+}
+
+header {
+  background-color: $kebabSiteHeaderBackground;
+  padding: 1px;
+}
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+
+  margin: 0 5px;
+}
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+
+  height: 200px;
+
+  text-align: center;
+}
+
+.noumber_one {
+  text-decoration: none;
+  color: $buttonsTextColor;
+}
+.noumber_one:hover {
+  text-decoration: underline;
+}
+
+.noumber_two {
+  text-decoration: none;
+  color: $buttonsTextColor;
+}
+.noumber_two:hover {
+  text-decoration: underline;
+}
+.cart {
+  display: flex;
+}
+
+.XD {
+  color: $buttonsTextColor;
+}
+
+.XD {
+  text-decoration: none;
+}
+
+.XD:hover {
+  text-decoration: underline;
+  color: $plusColor;
+}

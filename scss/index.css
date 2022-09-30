@@ -1,0 +1,22 @@
+.index {
+  margin-left: 500px;
+  text-align: left;
+  display: flex;
+}
+.index-kebabDay {
+  display: flex;
+  flex-direction: row;
+}
+.index-Kebab-biggest {
+  flex-direction: row;
+  list-style-position: inside;
+}
+.index-Maklowicz {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.index-Maklowicz-text {
+  width: 500px;
+  margin-left: 40px;
+}/*# sourceMappingURL=index.css.map */
