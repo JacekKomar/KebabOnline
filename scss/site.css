@@ -1,0 +1,368 @@
+body {
+  background-color: goldenrod;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+}
+
+.page-selection {
+  color: white;
+}
+
+.XD {
+  color: white;
+}
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+  height: 200px;
+  text-align: center;
+}
+
+.Contact {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  text-decoration: none;
+  margin-left: 710px;
+  display: flex;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.headers {
+  text-decoration: none;
+}
+
+.Center {
+  color: white;
+  padding: 0 auto;
+  text-decoration: none;
+  margin-right: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px;
+}
+
+.Kebab-pizza {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.Foods {
+  display: flex;
+}
+
+.restauration {
+  margin-left: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nawigacja {
+  font-size: 20pt;
+}
+
+.XD {
+  text-decoration: none;
+}
+
+.XD:hover {
+  text-decoration: underline;
+  color: rgb(93, 211, 142);
+}
+
+.job {
+  display: flex;
+  margin-left: 170px;
+}
+.job-info {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.job-text {
+  text-decoration: none;
+  display: flex;
+  margin-top: 50px;
+  width: 500px;
+  text-align: left;
+  list-style-position: inside;
+}
+.job-texttwo {
+  text-decoration: none;
+  display: flex;
+  width: 600px;
+  /* margin-left: -500px; */
+}
+
+.index {
+  margin-left: 500px;
+  text-align: left;
+  display: flex;
+}
+
+.Maklowicz-text {
+  width: 500px;
+  margin-left: 40px;
+}
+
+.Kebab-biggest {
+  flex-direction: row;
+  list-style-position: inside;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.drinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.button-kebab {
+  width: 310px;
+  height: 50px;
+  background-color: darkgreen;
+  color: white;
+  font-size: large;
+}
+
+.Kebab-drinks {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.Center-drinks {
+  color: white;
+  padding: 0 auto;
+  text-decoration: none;
+  margin-right: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px;
+}
+
+.button-drinks {
+  width: 310px;
+  height: 50px;
+  background-color: rgb(71, 52, 0);
+  color: white;
+  font-size: large;
+}
+
+.shopping {
+  color: aliceblue;
+}
+
+.plus-minus-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bi-dash-square {
+  color: red;
+}
+
+.bi-plus-square {
+  color: rgb(56, 87, 9);
+}
+
+.cart {
+  display: flex;
+}
+
+.shopping-article {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.RemoveAll {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.RemoveAll {
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.titke-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1px;
+}
+
+.titke-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 3px 6px;
+}
+
+.kebabDay {
+  display: flex;
+  flex-direction: row;
+}
+
+.Maklowicz {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.restauration_text {
+  margin-left: 15px;
+}
+
+.payment {
+  margin-top: 200px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  background-color: darkgreen;
+  color: antiquewhite;
+  font-size: medium;
+}
+
+.table {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.button_order {
+  margin-top: 20px;
+  margin-left: 820px;
+}
+
+.mailto:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+
+.mailto {
+  color: #212529;
+}
+
+.phone_number:hover {
+  text-decoration: underline;
+  color: rgb(33, 124, 71);
+}
+
+.phone_number {
+  color: black;
+}
+
+.contact_photos {
+  margin-left: 800px;
+  margin-top: 360px;
+}
+
+.payFor {
+  margin-top: 240px;
+  margin-left: 820px;
+}
+
+.counter_price {
+  margin-top: 200px;
+}
+
+.noumber_one {
+  text-decoration: none;
+  color: white;
+}
+
+.noumber_one:hover {
+  text-decoration: underline;
+}
+
+.noumber_two {
+  text-decoration: none;
+  color: white;
+}
+
+.noumber_two:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=site.css.map */

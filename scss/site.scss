@@ -1,10 +1,21 @@
+// TODO - co jacko ma zrobić
+// - wszystkie kolory wynieść do zmiennych i użyć te zmienne, tak jak $kebabSiteBackground
+// - spróbować pogrupować klasy tak jak .job i w środku te podklasy job
+// - oglądać mądry filmik o scss
+// - potworzyć pliki scss pod każdą podstronę, i tam wydzielić style do każdej podstrony
+// - stworzyć plik scss z WSPÓLNYMI stylami
+// - zrobić osobny plik scss, w którym będą tylko zmienne z kolorami
+// -
+
+@import "colors.scss";
+
 body {
-  background-color: goldenrod;
+  background-color: $kebabSiteBackground;
   margin: 0;
 }
 
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: $kebabSiteHeaderBackground;
   padding: 1px;
 }
 nav > ul > li {
@@ -22,8 +33,8 @@ nav > ul > li {
 }
 
 .container {
-  height: 300px;
-  background-color: red;
+  // height: 300px;
+  // background-color: red;
 }
 .container {
   font-family: arial;
@@ -100,31 +111,32 @@ nav > ul > li {
   text-decoration: underline;
   color: rgb(93, 211, 142);
 }
+
 .job {
-  margin-left: 300px;
-  margin-top: 100px;
-}
-
-.job-text {
-  text-decoration: none;
-  display: flex;
-  margin-top: 50px;
-  width: 500px;
-  text-align: left;
-  list-style-position: inside;
-}
-
-.job-texttwo {
-  text-decoration: none;
-  display: flex;
-
-  width: 600px;
-  /* margin-left: -500px; */
-}
-
-.job-container {
   display: flex;
   margin-left: 170px;
+
+  &-info {
+    margin-left: 300px;
+    margin-top: 100px;
+  }
+
+  &-text {
+    text-decoration: none;
+    display: flex;
+    margin-top: 50px;
+    width: 500px;
+    text-align: left;
+    list-style-position: inside;
+  }
+
+  &-texttwo {
+    text-decoration: none;
+    display: flex;
+
+    width: 600px;
+    /* margin-left: -500px; */
+  }
 }
 
 .index {
