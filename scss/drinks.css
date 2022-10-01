@@ -70,6 +70,78 @@ nav > ul > li {
   color: rgb(56, 87, 9);
 }
 
+body {
+  background-color: goldenrod;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+}
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+  height: 200px;
+  text-align: center;
+}
+
+.noumber_one {
+  text-decoration: none;
+  color: white;
+}
+
+.noumber_one:hover {
+  text-decoration: underline;
+}
+
+.noumber_two {
+  text-decoration: none;
+  color: white;
+}
+
+.noumber_two:hover {
+  text-decoration: underline;
+}
+
+.cart {
+  display: flex;
+}
+
+.XD {
+  color: white;
+}
+
+.XD {
+  text-decoration: none;
+}
+
+.XD:hover {
+  text-decoration: underline;
+  color: rgb(93, 211, 142);
+}
+
+.plus-minus-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bi-dash-square {
+  color: red;
+}
+
+.bi-plus-square {
+  color: rgb(56, 87, 9);
+}
+
 .index {
   margin-left: 500px;
   text-align: left;
@@ -293,6 +365,67 @@ nav > ul > li {
   font-size: large;
 }
 
+.page-selection {
+  color: white;
+}
+
+.headers {
+  text-decoration: none;
+}
+
+.nawigacja {
+  font-size: 20pt;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.Center {
+  color: white;
+  padding: 0 auto;
+  text-decoration: none;
+  margin-right: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px;
+}
+
+.Kebab-pizza {
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+  margin-top: 8px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 51px;
+  margin-left: 40px;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.Foods {
+  display: flex;
+}
+
+.button-kebab {
+  width: 310px;
+  height: 50px;
+  background-color: darkgreen;
+  color: white;
+  font-size: large;
+}
+
 .Center-drinks {
   color: white;
   padding: 0 auto;
@@ -332,29 +465,4 @@ nav > ul > li {
   background-color: rgb(71, 52, 0);
   color: white;
   font-size: large;
-}
-
-.page-selection {
-  color: white;
-}
-
-.headers {
-  text-decoration: none;
-}
-
-.nawigacja {
-  font-size: 20pt;
-}
-
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}/*# sourceMappingURL=site.css.map */
+}/*# sourceMappingURL=drinks.css.map */
