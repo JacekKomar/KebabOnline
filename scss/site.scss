@@ -32,3 +32,109 @@
   font-size: 3em;
   text-align: center;
 }
+
+.counter_price {
+  margin-top: 200px;
+
+  &-text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-payFor {
+    margin-top: 240px;
+    margin-left: 820px;
+  }
+
+  &-table {
+    font-weight: 500;
+    font-size: medium;
+  }
+  &-button_order {
+    margin-top: 20px;
+    margin-left: 820px;
+  }
+  &-order {
+    background-color: $buttonOrderColor;
+    color: $payAndOrderButtonColor;
+    font-size: medium;
+  }
+}
+
+.InformationAboutBuyer {
+  margin-right: 1000px;
+  margin-bottom: 200px;
+}
+
+.counter_price-button_order {
+  align-items: center;
+}
+
+.counter_price {
+  margin-top: 200px;
+
+  &-text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-payFor {
+    margin-top: 240px;
+    margin-left: 820px;
+  }
+
+  &-table {
+    font-weight: 500;
+    font-size: medium;
+  }
+  &-button_order {
+    margin-top: 20px;
+    margin-left: 820px;
+  }
+  &-order {
+    background-color: $buttonOrderColor;
+    color: $payAndOrderButtonColor;
+    font-size: medium;
+  }
+}
+
+.counter_price-button_order {
+  text-size-adjust: 200px;
+  width: 1000px;
+  height: 500px;
+}
+
+.AllItems {
+  margin-left: 800px;
+}
+.form-control {
+  display: block;
+
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.counter_price-order {
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: large;
+  margin-left: 15px;
+}
+
+.mb-3 {
+  width: 300px;
+}
+
+.form-control {
+  width: 300px;
+}
