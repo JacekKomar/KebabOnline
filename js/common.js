@@ -9,12 +9,12 @@ export let update = (card, id) => {
     return;
   }
   document.getElementById(id).innerHTML = search.item;
-  calculation();
+  calculation(getCard());
 };
 
-export let calculation = () => {
+export let calculation = (newCard) => {
   let cartIcon = document.getElementById("XD");
-  cartIcon.innerHTML = getCard()
+  cartIcon.innerHTML = newCard
     .map((kebabOne) => kebabOne.item)
     .reduce((x, y) => x + y, 0);
 };
@@ -64,3 +64,19 @@ export let decrement = (clickedId) => {
 
 window.increment = increment;
 window.decrement = decrement;
+
+export const getTotalAmountAsNumber = (card, kebabList) => {
+  let amount = card
+    .map((x) => {
+      let { item, id } = x;
+      let search = kebabList.find((y) => y.id === id) || {}; //jak to dodaje to wywala
+      return item * search.price;
+    })
+    .reduce((x, y) => x + y, 0);
+
+  return amount;
+};
+
+export const parseZlotowki = (floatNumber) => {
+  return parseFloat(floatNumber).toFixed(2);
+};

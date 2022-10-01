@@ -1,0 +1,24 @@
+.counter_price {
+  margin-top: 200px;
+}
+.counter_price-text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.counter_price-payFor {
+  margin-top: 240px;
+  margin-left: 820px;
+}
+.counter_price-table {
+  font-weight: 500;
+  font-size: medium;
+}
+.counter_price-button_order {
+  margin-top: 20px;
+  margin-left: 820px;
+}
+.counter_price-order {
+  background-color: darkgreen;
+  color: antiquewhite;
+  font-size: medium;
+}/*# sourceMappingURL=payment.css.map */

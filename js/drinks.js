@@ -1,5 +1,11 @@
 import { beerList, kebabList, foodList, card } from "./database.js";
-import { calculation, decrement, increment, update } from "./common.js";
+import {
+  calculation,
+  decrement,
+  increment,
+  update,
+  getCard,
+} from "./common.js";
 
 const shop = document.getElementById("BeerListFromJavaScript");
 
@@ -26,4 +32,4 @@ const generateBeerOne = (BeerOne) => {
 
 shop.innerHTML += beerList.map(generateBeerOne).join("");
 
-calculation();
+calculation(getCard());

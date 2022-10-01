@@ -1,2 +1,2 @@
-import { calculation } from "./common.js";
-calculation();
+import { calculation, getCard } from "./common.js";
+calculation(getCard());

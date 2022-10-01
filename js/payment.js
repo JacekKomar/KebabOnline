@@ -1,11 +1,14 @@
-import { card } from "./database.js";
+import { card, kebabList } from "./database.js";
 
 import {
-  label,
-  shoppingCart,
-  getTotalAmountAsNumber,
   parseZlotowki,
-} from "./your_shopping.js";
+  getTotalAmountAsNumber,
+  calculation,
+  getCard,
+} from "./common.js";
+
+let label = document.getElementById("label");
+let shoppingCart = document.getElementById("shopping-cart");
 
 let generateCartItems = (newCard) => {
   if (newCard.length !== 0) {
@@ -20,7 +23,8 @@ let TotalAmount = (card) => {
     return;
   }
 
-  let amount = getTotalAmountAsNumber(card);
+  let amount = getTotalAmountAsNumber(card, kebabList);
+  const amountRounded = parseZlotowki(amount);
 
   label.innerHTML = `
   <h2>Pełny Koszt :  ${amountRounded} zł </h2>
@@ -29,3 +33,5 @@ let TotalAmount = (card) => {
 };
 
 TotalAmount(card);
+
+calculation(getCard());

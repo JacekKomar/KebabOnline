@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="scss/site.css" type="text/css">
+    <link rel="stylesheet" href="scss/payment.css" type="text/css">
+
+
 
 
     <title>Foods</title>
@@ -119,13 +122,15 @@
 
 
 
-    <div class="counter_price-payFor">
+    <div class="container counter_price-payFor">
 
 
 
 
 
-        <form>
+        <form class="InformationAboutBuyer">
+
+
 
             <div class="mb-3">
                 <label class="form-label">Imię:</label>
@@ -136,18 +141,29 @@
                 <label class="form-label">Nazwisko:</label>
                 <input class="form-control" type="text" id="Username">
             </div>
+
             <div class="mb-3">
-                Adres Zamówienia:
-                <input class="counter_price-table" size="17" type="text" id="Adress">
+                <label class="form-label">Adres Zamówienia:</label>
+                <input class="form-control" type="text" id="Adress">
             </div>
+
+
+
             <div class="mb-3">
-                Numer telefonu:
-                <input class="counter_price-table" type="text" id="Phone">
+                <label class="form-label">Numer telefonu:</label>
+                <input class="form-control" type="text" id="Phone">
             </div>
+
+
+
             <div class="mb-3">
-                Podaj informacje o wybranych <br>sosach i mięsie:
-                <input class="counter_price-table" type="text" id="info">
+                <label class="form-label"> Podaj informacje o wybranych sosach i mięsie:</label>
+                <input class="form-control" type="text" id="info">
             </div>
+
+
+
+
 
             <div class="counter_price-button_order">
                 <button class="counter_price-order" onclick="Information()"> Zamów do swojego domu !</button>

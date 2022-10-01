@@ -5,16 +5,15 @@ import {
   getCard,
   increment,
   update,
+  parseZlotowki,
+  getTotalAmountAsNumber,
 } from "./common.js";
 
 export let label = document.getElementById("label");
 export let shoppingCart = document.getElementById("shopping-cart");
 
-export const parseZlotowki = (floatNumber) => {
-  return parseFloat(floatNumber).toFixed(2);
-};
+calculation(getCard());
 
-calculation();
 let incrementCard = (clickedId) => {
   const newCard = increment(clickedId);
   generateCartItems(newCard);
@@ -76,9 +75,6 @@ export let generateCartItems = (newCard) => {
     </a>
     `;
   }
-  //test
-
-  //test
 };
 
 generateCartItems(getCard());
@@ -88,7 +84,7 @@ let removeItem = (id) => {
   const newCard = getCard().filter((x) => x.id !== selectedItem);
   generateCartItems(newCard);
   TotalAmount(newCard);
-  calculation();
+  calculation(newCard);
   localStorage.setItem("data", JSON.stringify(newCard));
 };
 window.removeItem = removeItem;
@@ -96,30 +92,18 @@ window.removeItem = removeItem;
 let clearCart = () => {
   const newCard = [];
   generateCartItems(newCard);
-  calculation();
+  calculation(getCard());
   localStorage.setItem("data", JSON.stringify(newCard));
 };
 
 window.clearCart = clearCart;
-
-export const getTotalAmountAsNumber = (card) => {
-  let amount = card
-    .map((x) => {
-      let { item, id } = x;
-      let search = kebabList.find((y) => y.id === id) || {}; //jak to dodaje to wywala
-      return item * search.price;
-    })
-    .reduce((x, y) => x + y, 0);
-
-  return amount;
-};
 
 let TotalAmount = (card) => {
   if (card.length === 0) {
     return;
   }
 
-  let amount = getTotalAmountAsNumber(card);
+  let amount = getTotalAmountAsNumber(card, kebabList);
   const amountRounded = parseZlotowki(amount);
 
   label.innerHTML = `
