@@ -202,7 +202,6 @@ export const kebabList = [
   },
 ];
 export let card = JSON.parse(localStorage.getItem("data")) || [];
-// dokonczyc kebaby powyższe,
 
 export const foodList = kebabList.filter((kebab) => kebab.category === "food");
 export const beerList = kebabList.filter((kebab) => kebab.category === "drink");
