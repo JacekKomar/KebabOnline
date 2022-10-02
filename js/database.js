@@ -170,6 +170,36 @@ export const kebabList = [
       Gazowana <br>
       Zdrowotna`,
   },
+  {
+    id: "waterTwo",
+    img: "imagies/drinks/waterStrong.jpg",
+    titke: "Woda Franciszek 5 l.",
+    category: "drink",
+    price: 20,
+    desc: `Pojemność - 5000 ml <br>
+      Gazowana <br>
+      Zdrowotna`,
+  },
+  {
+    id: "waterJuzef",
+    img: "imagies/drinks/waterJuzef.jpg",
+    titke: "Woda Józef",
+    category: "drink",
+    price: 2.21,
+    desc: `Pojemność - 500 ml <br>
+      Nie gazowana <br>
+      Zdrowotna`,
+  },
+  {
+    id: "waterHenryk",
+    img: "imagies/drinks/waterHenryk.jpg",
+    titke: "Woda Henryk",
+    category: "drink",
+    price: 3.19,
+    desc: `Pojemność - 500 ml <br>
+      Nie gazowana <br>
+      Dobra na kaca`,
+  },
 ];
 export let card = JSON.parse(localStorage.getItem("data")) || [];
 // dokonczyc kebaby powyższe,
