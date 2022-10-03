@@ -16,7 +16,7 @@ const generateBeerOne = (BeerOne) => {
   <div class="Kebab-drinks" id="${BeerOne}">
     <img src="${BeerOne.img}" alt="beer1" width="310px" height="260px" />
     <div class="titke">${BeerOne.titke}</div>
-    <div class="price">${BeerOne.price}</div>
+    <div class="price">${BeerOne.price} zł</div>
     <p class="desc">${BeerOne.desc}</p>
     <div class="plus-minus-buttons">
     <i class="bi bi-dash-square" onclick="decrement('${BeerOne.id}')"></i>
