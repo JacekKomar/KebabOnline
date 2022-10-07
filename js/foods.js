@@ -16,7 +16,10 @@ const generateKebabOne = (kebabOne) => {
   let search =
     card.find((szukanyKebab) => szukanyKebab.id === kebabOne.id) || [];
 
-  return `<div  class= "Kebab-pizza" id="${kebabOne}"> 
+  return `
+  <div  class= "col-sm-3 col-md-3">
+  
+  <div  class= "Kebab-pizza"  id="${kebabOne}"> 
 <img src="${kebabOne.img}" alt="Kebabbig" width="310px" height="210px" />
 <div class="titke">${kebabOne.titke}</div>
 <div class="price">${kebabOne.price} zł</div>
@@ -32,7 +35,9 @@ const generateKebabOne = (kebabOne) => {
   <i  class="bi bi-plus-square" onclick="increment('${kebabOne.id}')" ></i>
 </div>
 <button onclick="location.href='http://127.0.0.1:5500/your_shopping.html'" class="button-kebab" data-order="kebabbig">Zamów</button>
-</div>`;
+</div>
+</div>
+`;
 };
 
 //shop.innerHTML = generateKebabOne(kebabList[1]);
