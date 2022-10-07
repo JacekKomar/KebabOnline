@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="scss/site.css" type="text/css">
   <title>Foods</title>
   <link rel="icon" href="icon.jpg">
@@ -13,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
 
 
 
@@ -75,49 +79,74 @@
 
     </div>
 
+  </div>
 
 
-
+  <div class="container">
     <main class="index">
+      <div class="allMarginTop">
+
+        <div class="row">
 
 
 
-      <div class="kebab-week">
-        <h1>Kebab Tygodnia:</h1>
+          <div class="kebab-week">
+            <div class="col-sm-6 col-md-4"></div>
+            <h1>Kebab Tygodnia:</h1>
 
-        <div class="index-kebabDay">
-          <img src="imagies/foods/Kebabbig.jpg" alt="Kebabbig" width="500px" ; />
+            <div class="index-kebabDay">
+              <img src="imagies/foods/Kebabbig.jpg" alt="Kebabbig" width="500px" ; />
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+              <ul class="img-fluid">
+                <p> Kebab Olbrzym:</p>
+                <li>cena: 30.33 zł</li>
+                <li>długość: 50cm</li>
+                <li>sos: ostry/łagodny</li>
+                <li>mięso: baranina/kurczak</li>
+              </ul>
+            </div>
+          </div>
 
 
+          <div class="col-sm-6 col-md-4">
+            <div class="img-fluid">
 
-          <ul class="index-Kebab-biggest">
-            <p> Kebab Olbrzym:</p>
-            <li>cena: 30.33 zł</li>
-            <li>długość: 50cm</li>
-            <li>sos: ostry/łagodny</li>
-            <li>mięso: baranina/kurczak</li>
-          </ul>
+              <img src="imagies/other/Maklowicz.jpg" alt="Maklowicz" width="500px" ; />
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <p class="index-Maklowicz-text">Nasza restauracja otrzymała liczne nagrody kulinarne w tym najważniejszą
+                nagrodę najlepszego kebaba w Polsce otrzymaną za zajęcie 1 miejsca w konkursie
+                organizowanym przez samego Roberta Makłowicza. To pozwoliło zyskać restauracji popularność
+                w całym kraju. Odwiedzili ją liczni celebryci i smakosze.</p>
+
+
+            </div>
+          </div>
+
         </div>
 
-
-        <div class="index-Maklowicz">
-
-          <img src="imagies/other/Maklowicz.jpg" alt="Maklowicz" width="500px" ; />
-
-          <p class="index-Maklowicz-text">Nasza restauracja otrzymała liczne nagrody kulinarne w tym najważniejszą
-            nagrodę najlepszego kebaba w Polsce otrzymaną za zajęcie 1 miejsca w konkursie
-            organizowanym przez samego Roberta Makłowicza. To pozwoliło zyskać restauracji popularność
-            w całym kraju. Odwiedzili ją liczni celebryci i smakosze.</p>
-
-        </div>
       </div>
-    </main>
-
+  </div>
+  </div>
+  </main>
 
   </div>
 
-  <script type="module" src="js/noumber_of_items_in_menu.js"></script>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+
+  <script src="js.Bootstrap/bootstrap.min.js"></script>
+  <script type="module" src="js/noumber_of_items_in_menu.js"></script>
 </body>
 
 </html>

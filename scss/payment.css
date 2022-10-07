@@ -1,1 +1,41 @@
-/*# sourceMappingURL=payment.css.map */
+.counter_price-button_order {
+  -webkit-text-size-adjust: 200px;
+     -moz-text-size-adjust: 200px;
+          text-size-adjust: 200px;
+  width: 1000px;
+  height: 500px;
+}
+
+.AllItems {
+  margin-left: 800px;
+}
+
+.form-control {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mb-3 {
+  width: 300px;
+}
+
+.form-control {
+  width: 300px;
+}
+
+.buttonTestowy {
+  border-radius: 20px;
+  border: 5px #5f9bd1 solid;
+}/*# sourceMappingURL=payment.css.map */

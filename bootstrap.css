@@ -667,6 +667,7 @@ progress {
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -2323,7 +2324,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /* color-adjust: exact; */
   print-color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {

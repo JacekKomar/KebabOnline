@@ -1,7 +1,5 @@
 .index {
-  margin-left: 500px;
   text-align: left;
-  display: flex;
 }
 .index-kebabDay {
   display: flex;
@@ -15,8 +13,13 @@
   display: flex;
   flex-direction: row;
   margin-top: 40px;
+  width: 100%;
 }
 .index-Maklowicz-text {
   width: 500px;
   margin-left: 40px;
+}
+
+.allMarginTop {
+  margin-top: 200px;
 }/*# sourceMappingURL=index.css.map */
