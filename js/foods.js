@@ -17,7 +17,7 @@ const generateKebabOne = (kebabOne) => {
     card.find((szukanyKebab) => szukanyKebab.id === kebabOne.id) || [];
 
   return `
-  <div  class= "col-sm-3 col-md-3">
+  
   
   <div  class= "Kebab-pizza"  id="${kebabOne}"> 
 <img src="${kebabOne.img}" alt="Kebabbig" width="310px" height="210px" />
@@ -36,7 +36,7 @@ const generateKebabOne = (kebabOne) => {
 </div>
 <button onclick="location.href='http://127.0.0.1:5500/your_shopping.html'" class="button-kebab" data-order="kebabbig">Zamów</button>
 </div>
-</div>
+
 `;
 };
 
