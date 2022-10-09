@@ -93,7 +93,18 @@ nav > ul > li {
 }
 
 .allMarginTop {
-  margin-top: 200px;
+  margin-top: 400px;
+}
+
+.menuMargin {
+  display: flex;
+  flex-direction: row;
+}
+
+.photosInMenu {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 
 .Contact {
