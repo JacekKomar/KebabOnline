@@ -125,6 +125,10 @@ nav > ul > li {
   max-width: 100%;
 }
 
+.dotsInside {
+  list-style-position: inside;
+}
+
 .Contact {
   color: rgb(0, 0, 0);
   padding: 0 auto;
@@ -261,10 +265,6 @@ nav > ul > li {
 .mailto:hover {
   text-decoration: underline;
   color: rgb(33, 124, 71);
-}
-
-.jobMarginBody {
-  margin-top: 1000px;
 }
 
 .counter_price-button_order {
