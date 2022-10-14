@@ -107,6 +107,15 @@ nav > ul > li {
   text-align: center;
 }
 
+.font {
+  font-family: arial;
+  font-size: 24px;
+}
+
+.ul {
+  text-align: left;
+}
+
 .Contact {
   color: rgb(0, 0, 0);
   padding: 0 auto;

@@ -30,57 +30,85 @@
       <header>
 
 
-        <nav>
-          <ul>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+            aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji"> <span
+              class="navbar-toggler-icon"> </span>
+          </button>
 
-            <img src="imagies/other/icon.jpg" alt="icon" width="200px" ;>
-            <img src="imagies/other/main_photo.jpg" alt="icon" width="600px" height="200" />
-            <p>
-              <li><a href="index.html" class="XD">Strona główna</a></li>
-              <li><a href="Foods.html" class="XD">Dania</a></li>
-              <li><a href="Drinks.html" class="XD">Napoje</a></li>
-
-
-              <li><a href="Restauration.html" class="XD">Restauracja</a></li>
-              <li><a href="job.html" class="XD">Praca</a></li>
-
-              <li><a href="Contact.html" class="XD">kontakt</a></li>
-
-              <li><a href="your_shopping.html" class="XD">
+          <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav">
 
 
 
 
 
 
-                  <div class="cart">
-                    <div class="XD">Twoje zakupy
+
+            </ul>
+
+
+          </div>
+
+          <div class="row">
+
+
+            <img class=" d-none d-md-block text-center" src="imagies/other/icon.jpg" alt="icon" width="200px" ;>
+            <img class="text-center img-fluid" src="imagies/other/main_photo.jpg" alt="icon" width="600px"
+              height="200" />
+
+
+
+            <ul class="col-12 text-center">
+
+              <p>
+                <li><a href="index.html" class="XD">Strona główna</a></li>
+                <li><a href="Foods.html" class="XD">Dania</a></li>
+                <li><a href="Drinks.html" class="XD">Napoje</a></li>
+
+
+                <li><a href="Restauration.html" class="XD">Restauracja</a></li>
+                <li><a href="job.html" class="XD">Praca</a></li>
+
+                <li><a href="Contact.html" class="XD">kontakt</a></li>
+
+                <li><a href="your_shopping.html" class="XD">
 
 
 
 
+
+
+                    <div class="cart">
+                      <div class="XD">Twoje zakupy
+
+
+
+
+                      </div>
+
+                      <div class="noumber_one"> (</div>
+                      <div id="XD" class="XD">
+
+                        (0) </div>
+
+
+                      <div class="noumber_two">)</div>
                     </div>
+                  </a></li>
 
-                    <div class="noumber_one"> (</div>
-                    <div id="XD" class="XD">
-
-                      (0) </div>
+              </p>
 
 
-                    <div class="noumber_two">)</div>
-                  </div>
-                </a></li>
-
-            </p>
-
-
-          </ul>
+            </ul>
         </nav>
 
     </div>
 
   </div>
-
+  </div>
+  </div>
+  </header class="menuMargin">
 
   <div class="container">
     <main class="index">
@@ -90,40 +118,54 @@
 
 
 
-          <div class="kebab-week">
-            <div class="col-sm-6 col-md-4"></div>
+
+          <div class="col-7 text-center mt-3 font">
             <h1>Kebab Tygodnia:</h1>
-
-            <div class="index-kebabDay">
-              <img src="imagies/foods/Kebabbig.jpg" alt="Kebabbig" width="500px" ; />
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <ul class="img-fluid">
-                <p> Kebab Olbrzym:</p>
-                <li>cena: 30.33 zł</li>
-                <li>długość: 50cm</li>
-                <li>sos: ostry/łagodny</li>
-                <li>mięso: baranina/kurczak</li>
-              </ul>
-            </div>
           </div>
 
 
-          <div class="col-sm-6 col-md-4">
-            <div class="img-fluid">
-
-              <img src="imagies/other/Maklowicz.jpg" alt="Maklowicz" width="500px" ; />
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <p class="index-Maklowicz-text">Nasza restauracja otrzymała liczne nagrody kulinarne w tym najważniejszą
-                nagrodę najlepszego kebaba w Polsce otrzymaną za zajęcie 1 miejsca w konkursie
-                organizowanym przez samego Roberta Makłowicza. To pozwoliło zyskać restauracji popularność
-                w całym kraju. Odwiedzili ją liczni celebryci i smakosze.</p>
-
-
-            </div>
+          <div class="col-9 text-center">
+            <img class="img-thumbnail" src="imagies/foods/Kebabbig.jpg" alt="Kebabbig" width="500px" ; />
           </div>
+
+          <div class="col-3 font">
+
+            <p> Kebab Olbrzym:</p>
+            <li>cena: 30.33 zł</li>
+            <li>długość: 50cm</li>
+            <li>sos: ostry/łagodny</li>
+            <li>mięso: baranina/kurczak</li>
+
+          </div>
+
+
+
+          <div class="col-9 p-3 text-center my-3">
+
+
+
+
+
+
+
+            <img class="img-thumbnail" src="imagies/other/Maklowicz.jpg" alt="Maklowicz" width="500px" ; />
+          </div>
+
+
+
+
+
+          <div class="col-3 font">
+            Nasza restauracja otrzymała liczne nagrody kulinarne w tym
+            najważniejszą
+            nagrodę najlepszego kebaba w Polsce otrzymaną za zajęcie 1 miejsca w konkursie
+            organizowanym przez samego Roberta Makłowicza. To pozwoliło zyskać restauracji
+            popularność
+            w całym kraju. Odwiedzili ją liczni celebryci i smakosze.
+
+
+          </div>
+
 
         </div>
 
