@@ -100,64 +100,67 @@
     </div>
     </aside>
 
-    <div class="row text-center">
+    <div class="container ">
+        <div class="row mt-5">
 
 
-        <div class="counter_price mt-5 text-center">
-            <div id="label" class="counter_price-text-center">
+            <div class="counter_price mt-5 col-12">
+                <div id="label" class="counter_price-text-center ">
+                </div>
+
+
+                <div class="shopping-cart " id="shopping-cart"></div>
+
+
+
+
+                <div class="text-center mt-5 ">
+
+                    <form>
+
+
+
+                        <div class="mb-3">
+                            <label class="form-label text-center">Imię:</label>
+                            <input type="email" width: 2000px class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nazwisko:</label>
+                            <input class="form-control" type="text" id="Username">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Adres Zamówienia:</label>
+                            <input class="form-control" type="text" id="Adress">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Numer telefonu:</label>
+                            <input class="form-control" type="text" id="Phone">
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label class="form-label"> Podaj informacje o wybranych sosach i mięsie:</label>
+                            <input class="form-control" type="text" id="info">
+                        </div>
+
+                        <div class="counter_price-button_orderTwo">
+                            <button class="counter_price-order" onclick="Information()"> Zamów do swojego
+                                domu
+                                !</button>
+
+                        </div>
+                </div>
+                </form>
             </div>
-
-
-            <div class="shopping-cart" id="shopping-cart"></div>
-
-
-
-
-            <div class="text-center mt-5">
-
-                <form>
-
-
-
-                    <div class="mb-3">
-                        <label class="form-label">Imię:</label>
-                        <input type="email" width: 2000px class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Nazwisko:</label>
-                        <input class="form-control" type="text" id="Username">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Adres Zamówienia:</label>
-                        <input class="form-control" type="text" id="Adress">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Numer telefonu:</label>
-                        <input class="form-control" type="text" id="Phone">
-                    </div>
-
-
-
-                    <div class="mb-3">
-                        <label class="form-label"> Podaj informacje o wybranych sosach i mięsie:</label>
-                        <input class="form-control" type="text" id="info">
-                    </div>
-
-                    <div class="counter_price-button_orderTwo">
-                        <button class="counter_price-order" onclick="Information()"> Zamów do swojego
-                            domu
-                            !</button>
-
-                    </div>
-            </div>
-            </form>
         </div>
     </div>
     </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
