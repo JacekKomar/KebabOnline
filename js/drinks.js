@@ -24,7 +24,7 @@ const generateBeerOne = (BeerOne) => {
     ${search.item === undefined ? 0 : search.item} 
     
     </div>
-    <i class="bi bi-plus-square" onclick="increment('${BeerOne.id}')" ></i>
+    <i class="bi bi-plus-square"   onclick="increment('${BeerOne.id}')" ></i>
   </div>
     <button onclick="location.href='http://127.0.0.1:5500/your_shopping.html'"class="button-drinks" data-order="Piwo">Zamów</button>
   </div>`;

@@ -1,7 +1,7 @@
 .Center {
   color: $buttonsTextColor;
   padding: 0 auto;
-
+  margin-top: 200px;
   text-decoration: none;
 
   display: flex;
@@ -16,11 +16,13 @@
   border-style: solid;
   border-color: $kebabSiteHeaderBackground;
   display: flex;
-  margin-top: 51px;
 
   flex-direction: column;
 
   background-color: $menuChoiceColor;
+
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .Foods {
   display: flex;

@@ -34,9 +34,17 @@
   font-weight: bold;
 }
 .cart-item {
-  border: 2px solid $kebabSiteHeaderBackground;
   border-radius: 5px;
   display: flex;
+  background-color: bisque;
+
+  padding: 0.25rem;
+
+  border: 2px solid;
+  border-radius: 0.375rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
 
 .titke-price-x {
@@ -64,5 +72,5 @@
 }
 
 .shopping-article {
-  margin-top: 300px;
+  margin-top: 220px;
 }
