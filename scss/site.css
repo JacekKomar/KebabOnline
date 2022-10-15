@@ -92,10 +92,6 @@ nav > ul > li {
   margin-left: 40px;
 }
 
-.allMarginTop {
-  margin-top: 100px;
-}
-
 .menuMargin {
   display: flex;
   flex-direction: row;
@@ -319,7 +315,7 @@ nav > ul > li {
 .Center {
   color: white;
   padding: 0 auto;
-  margin-top: 200px;
+  margin-top: 160px;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -354,7 +350,7 @@ nav > ul > li {
 .Center-drinks {
   color: white;
   padding: 0 auto;
-  margin-top: 250px;
+  margin-top: 200px;
   text-decoration: none;
   margin-right: 4px;
   display: flex;
