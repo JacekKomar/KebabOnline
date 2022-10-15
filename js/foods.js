@@ -19,8 +19,8 @@ const generateKebabOne = (kebabOne) => {
   return `
   
   
-  <div  class= "Kebab-pizza"  id="${kebabOne}"> 
-<img src="${kebabOne.img}" alt="Kebabbig" width="310px" height="210px" />
+  <div  class= "Kebab-pizza "  id="${kebabOne}"> 
+<img  src="${kebabOne.img}" alt="Kebabbig" width="310px" height="210px" />
 <div class="titke">${kebabOne.titke}</div>
 <div class="price">${kebabOne.price} zł</div>
 <p class="desc">
