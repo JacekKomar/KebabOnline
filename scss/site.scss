@@ -16,31 +16,10 @@
   text-decoration: none;
 }
 
-.nawigacja {
-  font-size: 20pt;
-}
-
-.flex-item {
-  background: $flex-item;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: $buttonsTextColor;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
-
 .counter_price {
   &-text-center {
     text-align: center;
-    margin-top: 100px;
-  }
-  &-payFor {
-    margin-top: 240px;
-    margin-left: 820px;
+    margin-top: 300px;
   }
 
   &-table {
@@ -50,41 +29,16 @@
   &-button_order {
     margin-top: 20px;
     margin-left: 820px;
+    align-items: center;
   }
   &-order {
     background-color: $buttonOrderColor;
     color: $payAndOrderButtonColor;
     font-size: medium;
   }
-}
-
-.counter_price-button_order {
-  align-items: center;
-}
-
-.counter_price {
-  margin-top: 200px;
 
   &-text-center {
     text-align: center;
     margin-bottom: 20px;
-  }
-  &-payFor {
-    margin-top: 240px;
-    margin-left: 820px;
-  }
-
-  &-table {
-    font-weight: 500;
-    font-size: medium;
-  }
-  &-button_order {
-    margin-top: 20px;
-    margin-left: 820px;
-  }
-  &-order {
-    background-color: $buttonOrderColor;
-    color: $payAndOrderButtonColor;
-    font-size: medium;
   }
 }

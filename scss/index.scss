@@ -5,35 +5,6 @@
     display: flex;
     flex-direction: row;
   }
-
-  &-Kebab-biggest {
-    flex-direction: row;
-
-    list-style-position: inside;
-  }
-
-  &-Maklowicz {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    width: 100%;
-  }
-
-  &-Maklowicz-text {
-    width: 500px;
-    margin-left: 40px;
-  }
-}
-
-.menuMargin {
-  display: flex;
-  flex-direction: row;
-}
-
-.photosInMenu {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
 }
 
 .font {

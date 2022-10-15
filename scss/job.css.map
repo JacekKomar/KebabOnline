@@ -1,1 +1,1 @@
-{"version":3,"sources":["job.scss","job.css","colors.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;ACDF;ADGE;EACE,iBAAA;ACDJ;ADIE;EACE,qBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;EACA,2BAAA;ACFJ;ADKE;EACE,qBAAA;EACA,aAAA;EAEA,YAAA;ACJJ;;ADOA;EACE,mBEzB0B;ADqB5B;;ADMA;EACE,0BAAA;EACA,uBElBc;ADehB","file":"job.css"}
+{"version":3,"sources":["job.scss","job.css","colors.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;ACDF;ADGE;EACE,iBAAA;ACDJ;;ADIA;EACE,mBET0B;ADQ5B;;ADGA;EACE,0BAAA;EACA,uBEFc;ADEhB","file":"job.css"}

@@ -4,19 +4,6 @@
 .job-info {
   margin-top: 100px;
 }
-.job-text {
-  text-decoration: none;
-  display: flex;
-  margin-top: 50px;
-  width: 500px;
-  text-align: left;
-  list-style-position: inside;
-}
-.job-texttwo {
-  text-decoration: none;
-  display: flex;
-  width: 600px;
-}
 
 .mailto {
   color: rgb(0, 0, 0);

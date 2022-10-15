@@ -77,31 +77,6 @@ nav > ul > li {
   display: flex;
   flex-direction: row;
 }
-.index-Kebab-biggest {
-  flex-direction: row;
-  list-style-position: inside;
-}
-.index-Maklowicz {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-  width: 100%;
-}
-.index-Maklowicz-text {
-  width: 500px;
-  margin-left: 40px;
-}
-
-.menuMargin {
-  display: flex;
-  flex-direction: row;
-}
-
-.photosInMenu {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
 
 .font {
   font-family: arial;
@@ -147,18 +122,6 @@ nav > ul > li {
 .Contact-mailto:hover {
   text-decoration: underline;
   color: rgb(33, 124, 71);
-}
-.Contact-photos {
-  margin-top: 360px;
-}
-
-.restauration-text {
-  margin-left: 200px;
-}
-
-.test {
-  display: flex;
-  flex-direction: row;
 }
 
 .shopping-article {
@@ -224,19 +187,6 @@ nav > ul > li {
   gap: 10px;
 }
 
-.cart-item-price {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border-radius: 3px 6px;
-}
-
-.payment {
-  margin-top: 200px;
-  margin-left: 400px;
-  display: flex;
-  flex-direction: column;
-}
-
 .shopping-article {
   margin-top: 220px;
 }
@@ -246,19 +196,6 @@ nav > ul > li {
 }
 .job-info {
   margin-top: 100px;
-}
-.job-text {
-  text-decoration: none;
-  display: flex;
-  margin-top: 50px;
-  width: 500px;
-  text-align: left;
-  list-style-position: inside;
-}
-.job-texttwo {
-  text-decoration: none;
-  display: flex;
-  width: 600px;
 }
 
 .mailto {
@@ -278,12 +215,9 @@ nav > ul > li {
   height: 500px;
 }
 
-.AllItems {
-  margin-left: 800px;
-}
-
 .form-control {
   display: block;
+  width: 300px;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -301,15 +235,6 @@ nav > ul > li {
 
 .mb-3 {
   width: 300px;
-}
-
-.form-control {
-  width: 300px;
-}
-
-.buttonTestowy {
-  border-radius: 20px;
-  border: 5px #5f9bd1 solid;
 }
 
 .Center {
@@ -335,10 +260,6 @@ nav > ul > li {
   margin-left: 30px;
 }
 
-.Foods {
-  display: flex;
-}
-
 .button-kebab {
   width: 310px;
   height: 50px;
@@ -355,15 +276,6 @@ nav > ul > li {
   margin-right: 4px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.drinks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .Kebab-drinks {
@@ -417,30 +329,9 @@ nav > ul > li {
   text-decoration: none;
 }
 
-.nawigacja {
-  font-size: 20pt;
-}
-
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
-
 .counter_price-text-center {
   text-align: center;
-  margin-top: 100px;
-}
-.counter_price-payFor {
-  margin-top: 240px;
-  margin-left: 820px;
+  margin-top: 300px;
 }
 .counter_price-table {
   font-weight: 500;
@@ -449,38 +340,14 @@ nav > ul > li {
 .counter_price-button_order {
   margin-top: 20px;
   margin-left: 820px;
+  align-items: center;
 }
 .counter_price-order {
   background-color: darkgreen;
   color: antiquewhite;
   font-size: medium;
-}
-
-.counter_price-button_order {
-  align-items: center;
-}
-
-.counter_price {
-  margin-top: 200px;
 }
 .counter_price-text-center {
   text-align: center;
   margin-bottom: 20px;
-}
-.counter_price-payFor {
-  margin-top: 240px;
-  margin-left: 820px;
-}
-.counter_price-table {
-  font-weight: 500;
-  font-size: medium;
-}
-.counter_price-button_order {
-  margin-top: 20px;
-  margin-left: 820px;
-}
-.counter_price-order {
-  background-color: darkgreen;
-  color: antiquewhite;
-  font-size: medium;
 }/*# sourceMappingURL=site.css.map */

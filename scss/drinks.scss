@@ -9,15 +9,6 @@
   flex-wrap: wrap;
 }
 
-.drinks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 .Kebab-drinks {
   color: $kebabSiteHeaderBackground;
   padding: 0 auto;
