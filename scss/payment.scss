@@ -25,3 +25,10 @@
 .mb-3 {
   width: 300px;
 }
+
+.button-payment {
+  height: 50px;
+  background-color: $buttonOrderColor;
+  color: $buttonsTextColor;
+  font-size: large;
+}

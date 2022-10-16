@@ -186,10 +186,6 @@ nav > ul > li {
   gap: 10px;
 }
 
-.shopping-article {
-  margin-top: 220px;
-}
-
 .job {
   display: flex;
 }
@@ -236,10 +232,16 @@ nav > ul > li {
   width: 300px;
 }
 
+.button-payment {
+  height: 50px;
+  background-color: darkgreen;
+  color: white;
+  font-size: large;
+}
+
 .Center {
   color: white;
   padding: 0 auto;
-  margin-top: 160px;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +272,6 @@ nav > ul > li {
 .Center-drinks {
   color: white;
   padding: 0 auto;
-  margin-top: 200px;
   text-decoration: none;
   margin-right: 4px;
   display: flex;
@@ -330,7 +331,6 @@ nav > ul > li {
 
 .counter_price-text-center {
   text-align: center;
-  margin-top: 300px;
 }
 .counter_price-table {
   font-weight: 500;
