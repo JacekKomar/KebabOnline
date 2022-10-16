@@ -8,11 +8,11 @@ import {
 } from "./common.js";
 
 let label = document.getElementById("label");
-let shoppingCart = document.getElementById("shopping-cart");
+let shoppingCart = document.getElementById("payment-shopping-cart");
 
 let generateCartItems = (newCard) => {
   if (newCard.length !== 0) {
-    shoppingCart.innerHTML = newCard.map(() => {});
+    shoppingCart.innerHTML = newCard.map(() => {}).join("");
   }
 };
 
