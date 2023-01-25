@@ -32,7 +32,6 @@ window.decrementCard = decrementCard;
 
 export let generateCartItems = (newCard) => {
   if (newCard.length !== 0) {
-    //return ?
     shoppingCart.innerHTML = newCard
       .map((kebabOne) => {
         let { id, item } = kebabOne;
