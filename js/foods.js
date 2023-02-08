@@ -9,9 +9,6 @@ import {
 
 const shop = document.getElementById("KebabListFromJavaScript");
 
-// kebabPreviev
-// kebabPreviev.kebabTitke
-
 const generateKebabOne = (kebabOne) => {
   let search =
     card.find((szukanyKebab) => szukanyKebab.id === kebabOne.id) || [];
@@ -40,7 +37,6 @@ const generateKebabOne = (kebabOne) => {
 `;
 };
 
-//shop.innerHTML = generateKebabOne(kebabList[1]);
 shop.innerHTML += foodList.map(generateKebabOne).join("");
 
 calculation(getCard());
